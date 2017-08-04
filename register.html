@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-cache"/>
+    <meta name="renderer" content="webkit"/>
+    <meta name="author" content="SIRMly">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/login.css"/>
+    <title>大唐西市</title>
+</head>
+<body>
+<div class="page login register">
+    <div class="login-title">
+        <img src="img/login-logo.png" alt=""/>
+    </div>
+    <div class="form-content">
+        <div class="input-item">
+            <label class="input-controller">
+                <span class="icon-span phone-icon"></span>
+                <input type="tel" placeholder="输入手机号" class="input-controls"/>
+            </label>
+            <div class="error">请输入正确的手机号码！</div>
+        </div>
+        <div class="input-item check-code flex ver-center her-stretch">
+            <label class="input-controller">
+                <input type="text" placeholder="输入验证码" maxlength="4" class="input-controls"/>
+            </label>
+            <span class="get-code">获取验证码</span>
+            <div class="error">验证码错误！</div>
+        </div>
+        <div class="input-item">
+            <label class="input-controller">
+                <span class="icon-span pass-icon"></span>
+                <input type="password" placeholder="设置登录密码，不少于六位" class="input-controls" />
+            </label>
+            <div class="error">密码格式不正确！</div>
+        </div>
+        <div class="input-item">
+            <label class="input-controller">
+                <span class="icon-span pass-icon"></span>
+                <input type="password" placeholder="确认登录密码，不少于六位" class="input-controls"/>
+            </label>
+            <div class="error">两次输入密码不一致！</div>
+        </div>
+        <div class="check-label flex ver-center">
+            <label class="checkbox-wrapper">
+                <input type="checkbox" checked class="checkbox-input"/>
+                <div class="checkbox-show"></div>
+            </label>
+            <span class="checkbox-word">同意<a href="javascript:;">《大唐西市博物馆网站隐私政策》</a></span>
+        </div>
+        <a href="##" class="register-btn"></a>
+    </div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/fastclick.min.js"></script>
+<script ></script>
+<script>
+    ;(function ($){
+        FastClick.attach(document.body);
+        /*==获取验证码点击事件==*/
+        getCodeClick();
+        function getCodeClick(){
+            $(".get-code").on("click", function (){
+                $(this).off("click").addClass("disabled");
+            });
+        }
+        /*==后端注意！！获取验证码倒计时之后还要再执行 getCodeClick()==*/
+
+    })(jQuery);
+</script>
+</body>
+</html>
