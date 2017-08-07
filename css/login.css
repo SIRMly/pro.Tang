@@ -10,7 +10,7 @@ img{display: block;}
 .error{font-size: 0.45rem; color: #f10b00; position: absolute; top: -6.5vw; left: 1rem;}
 .page.login{background: url("../img/login-bg.png") no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%;}
 .login-title{width: 100%; background: url("../img/login-top.png") no-repeat center center; -webkit-background-size: cover; background-size: cover; padding: 23% 0 5.87vw;}
-.login-title img{width: 40vw; height: 40vw; margin: 0 auto;}
+.login-title img{width: 32vw; height: 32vw; margin: 0 auto;}
 .form-content{width: 62.2%; margin: 2rem auto 0; padding-bottom: 1rem;}
 .input-item{height: 9vw; line-height: 9vw; position: relative; border: 1px solid #5f313e; border-radius: 1.7rem; padding: 0 0.8rem;}
 .input-item+.input-item{margin-top: 1.3em;}
