@@ -15,47 +15,50 @@
 </head>
 <body>
 <div class="page login register">
-    <div class="login-title">
-        <img src="img/login-logo.png" alt=""/>
+    <div class="container">
+        <div class="login-title">
+            <img src="img/login-logo.png" alt=""/>
+        </div>
+        <div class="form-content">
+            <div class="input-item">
+                <label class="input-controller">
+                    <span class="icon-span phone-icon"></span>
+                    <input type="tel" placeholder="输入手机号" class="input-controls"/>
+                </label>
+                <div class="error">请输入正确的手机号码！</div>
+            </div>
+            <div class="input-item check-code flex ver-center her-stretch">
+                <label class="input-controller">
+                    <input type="text" placeholder="输入验证码" maxlength="4" class="input-controls"/>
+                </label>
+                <span class="get-code">获取验证码</span>
+                <div class="error">验证码错误！</div>
+            </div>
+            <div class="input-item">
+                <label class="input-controller">
+                    <span class="icon-span pass-icon"></span>
+                    <input type="password" placeholder="设置登录密码，不少于六位" class="input-controls" />
+                </label>
+                <div class="error">密码格式不正确！</div>
+            </div>
+            <div class="input-item">
+                <label class="input-controller">
+                    <span class="icon-span pass-icon"></span>
+                    <input type="password" placeholder="确认登录密码，不少于六位" class="input-controls"/>
+                </label>
+                <div class="error">两次输入密码不一致！</div>
+            </div>
+            <div class="check-label flex ver-center">
+                <label class="checkbox-wrapper">
+                    <input type="checkbox" checked class="checkbox-input"/>
+                    <div class="checkbox-show"></div>
+                </label>
+                <span class="checkbox-word">同意<a href="javascript:;">《大唐西市博物馆网站隐私政策》</a></span>
+            </div>
+            <a href="##" class="register-btn"></a>
+        </div>
     </div>
-    <div class="form-content">
-        <div class="input-item">
-            <label class="input-controller">
-                <span class="icon-span phone-icon"></span>
-                <input type="tel" placeholder="输入手机号" class="input-controls"/>
-            </label>
-            <div class="error">请输入正确的手机号码！</div>
-        </div>
-        <div class="input-item check-code flex ver-center her-stretch">
-            <label class="input-controller">
-                <input type="text" placeholder="输入验证码" maxlength="4" class="input-controls"/>
-            </label>
-            <span class="get-code">获取验证码</span>
-            <div class="error">验证码错误！</div>
-        </div>
-        <div class="input-item">
-            <label class="input-controller">
-                <span class="icon-span pass-icon"></span>
-                <input type="password" placeholder="设置登录密码，不少于六位" class="input-controls" />
-            </label>
-            <div class="error">密码格式不正确！</div>
-        </div>
-        <div class="input-item">
-            <label class="input-controller">
-                <span class="icon-span pass-icon"></span>
-                <input type="password" placeholder="确认登录密码，不少于六位" class="input-controls"/>
-            </label>
-            <div class="error">两次输入密码不一致！</div>
-        </div>
-        <div class="check-label flex ver-center">
-            <label class="checkbox-wrapper">
-                <input type="checkbox" checked class="checkbox-input"/>
-                <div class="checkbox-show"></div>
-            </label>
-            <span class="checkbox-word">同意<a href="javascript:;">《大唐西市博物馆网站隐私政策》</a></span>
-        </div>
-        <a href="##" class="register-btn"></a>
-    </div>
+
     <div id="register-done">
         <div class="register-done-inner"></div>
     </div>
