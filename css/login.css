@@ -18,7 +18,7 @@ img{display: block;}
 .icon-span{width: 1rem; height: 1.4rem; background: url("../img/icon.png") no-repeat left center; -webkit-background-size: 200% auto; background-size: 200% auto;}
 /*.input-span{height: 100%;color: #5f313e; font-size: 0.7rem;width: 2.5rem; white-space: nowrap; word-spacing: 0.6rem; padding-left: 0.2rem;}*/
 .mail-icon{ background-position: center 23%;}
-.input-controls{flex: auto; height: 100%; width: 0; padding-left: 0.3rem;color: #5f313e; font-size: 0.7rem;}
+.input-controls{flex: auto; height: 100%; width: 0; padding-left: 0.3rem;color: #5f313e; font-size: 0.7rem; line-height: 8.8vw;}
 .input-controls::-webkit-input-placeholder{color: rgba(0,0,0,0.5); font-size: 0.5rem; line-height: 5vw;}
 .login-btn{display: block; width: 15.733vw;  height: 7.1vw; background: url("../img/login-btn.png") no-repeat center center; -webkit-background-size: contain; background-size: contain; margin: 3rem auto 0;}
 .login-links{text-align: center; margin-top: 0.5rem;}
@@ -32,7 +32,6 @@ img{display: block;}
 .phone-icon{ background-position: center 1%;}
 .pass-icon{background-position: center 12%;}
 .check-code .input-controller{width: 57.5%;}
-/*.get-code{width: 39.3%; font-size: 0.5rem; color: rgba(1,1,1,0.5); background-color: #dfbb8a; border: 1px solid #5f313e; border-radius: 1.7rem; text-align: center; margin-left: 0.3rem;}*/
 .get-code.disabled{background-color: transparent; color: #ccc4ba;}
 .check-label{font-size: 0.55rem; margin-top: 1.35rem;}
 .checkbox-wrapper{width: 0.55rem; height: 0.55rem; border: 1px solid #915041; position: relative; overflow: hidden;}
