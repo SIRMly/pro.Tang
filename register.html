@@ -56,6 +56,9 @@
         </div>
         <a href="##" class="register-btn"></a>
     </div>
+    <div id="register-done">
+        <div class="register-done-inner"></div>
+    </div>
 </div>
 <script src="js/jquery.min.js"></script>
 <script src="js/fastclick.min.js"></script>
@@ -72,9 +75,14 @@
         }
         /*==后端注意！！获取验证码倒计时之后还要再执行 getCodeClick()==*/
 
+        /*==注册成功后提示，1.5s后跳到登陆页面==*/
         $(".register-btn").on("click", function (){
-            alert("注册成功！")
-        })
+            $("#register-done").fadeIn(200, function (){
+                setTimeout(function (){
+                    window.location.href = "login.html";
+                },1500);
+            })
+        });
     })(jQuery);
 </script>
 </body>

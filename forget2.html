@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-cache"/>
+    <meta name="renderer" content="webkit"/>
+    <meta name="author" content="SIRMly">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/login.css"/>
+    <title>大唐西市</title>
+</head>
+<body>
+<div class="page login forget">
+    <div class="login-title">
+        <img src="img/login-logo.png" alt=""/>
+    </div>
+    <div class="form-content">
+        <div class="input-item">
+            <label class="input-controller">
+                <span class="icon-span key-icon"></span>
+                <input type="password" placeholder="新密码" class="input-controls"/>
+            </label>
+            <div class="error">密码应大于六位！</div>
+        </div>
+        <div class="input-item">
+            <label class="input-controller">
+                <span class="icon-span key-icon"></span>
+                <input type="password" placeholder="确认密码" class="input-controls"/>
+            </label>
+            <div class="error">两次密码不一致！</div>
+        </div>
+        <a href="##" class="forget2-btn"></a>
+    </div>
+    <div id="register-done">
+        <div class="forget-done-inner"></div>
+    </div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/fastclick.min.js"></script>
+<script ></script>
+<script>
+    ;(function ($){
+        FastClick.attach(document.body);
+
+        /*==注册成功后提示，1.5s后跳到登陆页面==*/
+        $(".forget2-btn").on("click", function (){
+            $("#register-done").fadeIn(200, function (){
+                setTimeout(function (){
+                    window.location.href = "login.html";
+                },1500);
+            })
+        });
+    })(jQuery);
+</script>
+</body>
+</html>

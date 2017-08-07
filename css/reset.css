@@ -26,8 +26,9 @@ html{font-size:20px}
 @media only screen and (min-width:400px){html{font-size:21.33px!important}}
 @media only screen and (min-width:414px){html{font-size:22.08px!important}}
 @media only screen and (min-width:480px){html{font-size:25.6px!important}}
-.page{background-color: #f1eae9; width: 100%; height: 100%; position: absolute; left: 0; top: 0; right: 0; bottom: 0;}
+.page{background-color: #fef6e3; width: 100%; height: 100%; position: absolute; left: 0; top: 0; right: 0; bottom: 0;}
 .container{position: absolute; left: 0; top: 0; right: 0; bottom: 0;overflow: auto; -webkit-overflow-scrolling: touch;}
+img{display: block; width: 100%;}
 .flex{display: -webkit-box; display: -ms-flexbox; display: -webkit-flex; display: flex;}
 .ver-center{ -webkit-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; }
 .ver-stretch{-webkit-box-align: stretch; -ms-flex-align: stretch; -webkit-align-items: stretch; align-items: stretch; }
