@@ -59,9 +59,15 @@
 /*==写评论==*/
 .write-comment{position: absolute; width: 100%; height: 13.1vw; bottom: 0; background-color: #5f313e; display: -webkit-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; -webkit-justify-content: space-between; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center;padding: 0 0.875rem 0 0;}
 .comment-number{display: block; height: 100%; width: 13vw; position: relative; }
-.comment-number img{width: 42%; margin: 2.535vw auto 0;}
+.comment-number a{position: absolute; width: 100%; left: 0; top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);}
+.comment-number img{width: 42%; margin: 0.65vw auto 0;}
 .comment-number p{width: 100%; text-align: center; color: #fff; font-size: 0.35rem; }
-.comment-input{flex: 1; position: relative; height: 7.2vw; padding: 0 3%; border: 1px solid #fff; margin:0 0.5rem; border-radius: 7px;}
+.comment-input{flex: 1; position: relative; height: 7.2vw; padding: 0 3%; border: 1px solid #fff; margin:0 0.5rem 0 0.1rem; border-radius: 7px;}
 .comment-input textarea{display: block; resize: none; height: 6vw; line-height: 5.8vw; width: 100%; text-indent: 0; font-size: 0.75rem; color: #441712; margin-top: 0.6vw; padding-left: 0.4rem; color: rgba(255,255,255,0.5); }
 .comment-send{width: 15.7vw; height: 100%; background: url("../img/comment-send.png") no-repeat center center; -webkit-background-size: contain; background-size: contain;}
 .textarea-placeholder,.textarea-reply{position: absolute; font-size: 0.75rem; color: rgba(255,255,255,0.5); height: 100%; line-height: 7.2vw; left: 3%; text-indent: 0.5rem;}
