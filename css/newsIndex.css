@@ -25,7 +25,7 @@
 .video-card-img:after{content: ""; background:url("../img/video-btn.png") no-repeat center center; -webkit-background-size: contain;background-size: contain;width: 10vw; height: 10vw; position: absolute; left: 50%; top: 50%; margin-left: -5vw; margin-top: -5vw;}
 /*==article页面==*/
 .pd75{padding-left: 0.5rem; padding-right: 0.5rem;}
-.news-detail .container{bottom: 10.8vw;}
+.news-detail .container{bottom: 13.1vw;}
 .article-detail{padding-top: 1rem; }
 .article-title{color: #5f313e; font-size: 1.05rem; line-height: 1.4rem;}
 .article-time{font-size: 0.8rem; height: 1.5rem;line-height: 1.5rem; margin-top: 0.5rem;}
