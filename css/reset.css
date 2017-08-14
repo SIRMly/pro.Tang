@@ -9,7 +9,7 @@ address, caption, cite, code, dfn, em, strong, th, var {font-style: normal;font-
 a { text-decoration: none; }
 img {border: none ; }
 li, ol, ul { list-style: none; }
-input, textarea {border: none; border: 0; outline: 0; background-color: transparent; -webkit-appearance: none; }
+input, textarea {border: none; border: 0; outline: 0; background-color: transparent; -webkit-appearance: none; -moz-appearance:none; appearance:none; resize: none;}
 textarea{overflow: auto;}
 button, input, select, textarea {font: 14px Verdana, Helvetica, Arial, sans-serif ;}
 table {border-collapse: collapse; }
