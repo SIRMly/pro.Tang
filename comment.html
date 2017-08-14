@@ -100,44 +100,45 @@
 <script src="js/jquery.min.js"></script>
 <script src="js/fastclick.min.js"></script>
 <script>
-    FastClick.attach(document.body);
-    var click = "click";
-    /*==点赞换图标==*/
-    $(".point-hand").on(click,  function (){
-        if($(this).hasClass("active")){
-            $(this).removeClass("active");
-        }else{
-            $(this).addClass("active");
-        }
-    });
-    /*==回复某个人==*/
-    var commentTextarea = $("#comment-textarea");
-    $(".comment-main").on(click, function (){
-        var name = $(this).prev().find(".name").html();
-        commentTextarea.focus().val("");
-        $(".textarea-reply").html("回复"+name+" :").removeClass("hide");
-    });
-    commentTextarea.on("input",function (){
-       if($(this).val()==""){
-           $(".textarea-reply").removeClass("hide");
-       }else{
-           $(".textarea-reply").addClass("hide");
-       }
-    });
-    /*==底部input问题==*/
-    var interval;
-    commentTextarea.focus(function (){
-        $(".textarea-placeholder").addClass("hide");
-        interval = setInterval(function() {
-            document.body.scrollTop = document.body.scrollHeight
-        }, 100)
-    }).blur(function (){
-        clearInterval(interval);
-        if($.trim($(this).val())==""){
-            $(".textarea-placeholder").removeClass("hide");
-        }
-        $(".textarea-reply").addClass("hide");
-    });
+    ;(function ($){
+        FastClick.attach(document.body);
+        /*==点赞换图标==*/
+        $(".point-hand").on("click",  function (){
+            if($(this).hasClass("active")){
+                $(this).removeClass("active");
+            }else{
+                $(this).addClass("active");
+            }
+        });
+        /*==回复某个人==*/
+        var commentTextarea = $("#comment-textarea");
+        $(".comment-main").on("click", function (){
+            var name = $(this).prev().find(".name").html();
+            commentTextarea.focus().val("");
+            $(".textarea-reply").html("回复"+name+" :").removeClass("hide");
+        });
+        commentTextarea.on("input",function (){
+            if($(this).val()==""){
+                $(".textarea-reply").removeClass("hide");
+            }else{
+                $(".textarea-reply").addClass("hide");
+            }
+        });
+        /*==底部input问题==*/
+        var interval;
+        commentTextarea.focus(function (){
+            $(".textarea-placeholder").addClass("hide");
+            interval = setInterval(function() {
+                document.body.scrollTop = document.body.scrollHeight
+            }, 100)
+        }).blur(function (){
+            clearInterval(interval);
+            if($.trim($(this).val())==""){
+                $(".textarea-placeholder").removeClass("hide");
+            }
+            $(".textarea-reply").addClass("hide");
+        });
+    })(jQuery);
 </script>
 </body>
 </html>

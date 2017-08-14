@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-cache"/>
+    <meta name="renderer" content="webkit"/>
+    <meta name="author" content="SIRMly">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/myCenter.css">
+    <title>大唐西市</title>
+</head>
+<body>
+<div class="page" id="mySetting">
+    <div class="content">
+        <div class="change-btns clearfix">
+            <a href="javascript:;" class="pull-left">取消</a>
+            <a href="javascript:;" class="pull-right">确定</a>
+        </div>
+        <div class="change-input flex ver-stretch her-stretch">
+            <input type="text" value="狗子" id="change-name"/>
+            <a href="javascript:;" class="info-delete"></a>
+        </div>
+        <p class="info-notice">以英文字母或汉字开头，限4-16个字符，一个汉字为2个字符</p>
+    </div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/fastclick.min.js"></script>
+<script>
+    ;(function ($) {
+        FastClick.attach(document.body);
+        $(".info-delete").on("click", function (){
+            var val = $("#change-name").val();
+            $("#change-name").val(val.substring(0,val.length-1)).focus();
+        })
+    })(jQuery);
+</script>
+</body>
+</html>

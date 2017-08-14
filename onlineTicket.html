@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-cache"/>
+    <meta name="renderer" content="webkit"/>
+    <meta name="author" content="SIRMly">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/iosSelect.css">
+    <link rel="stylesheet" href="css/lCalendar.css">
+    <link rel="stylesheet" href="css/newsIndex.css"/>
+    <title>大唐西市</title>
+</head>
+<body>
+<div class="page online-ticket">
+    <div class="container">
+        <div class="content">
+            <div class="online-wrapper">
+                <div class="online-title"></div>
+                <div class="ticket-content po-re">
+                    <div class="border-top"></div>
+                    <div class="border-bottom"></div>
+                    <div class="border-left"></div>
+                    <div class="border-right"></div>
+                    <p class="ticket-title">大唐西市博物馆免费开放管理办法(暂行)</p>
+                    <p>一、 大唐西市博物馆常设展览及临时展览（1-3层展览）免费开放。</p>
+                    <p>二、 参观一律凭有效证件（身份证，学生证等）换票。</p>
+                    <p>三、 每人每天一次，每天限1000人，上下午各500人。</p>
+                    <p>四、 陕西旅游年票在票务室刷卡换票，参观1-4层展览。</p>
+                    <p>五、 大件行李请存入票务室东侧的存包柜内。</p>
+                    <p>六、 特别展览（4层展览）暂不实行免费开放。</p>
+                    <p>&nbsp;&nbsp;票价：30元/人。</p>
+                    <p>七、 开放时间：</p>
+                    <p>全年开放（每周一以及除夕闭馆，法定节假日除外。）</p>
+                    <p>冬季：9:00-17:00（16:00停止票务办理）</p>
+                    <p>夏季：9:00-17:30（16:30停止票务办理）</p>
+                    <p>八、   换票地点：博物馆南门对面票务室</p>
+                    <p class="te-author">大唐西市博物馆</p>
+                    <p class="te-time">2014年5月16日</p>
+                </div>
+            </div>
+            <div class="enter-wrapper">
+                <div class="form-content">
+                    <label class="input-controller flex ver-stretch her-stretch">
+                        <span class="input-span number2">门 票</span>
+                        <input type="text" class="input-controls" value="常设展览及临时展览（1-3层展览）" readonly>
+                    </label>
+                    <label class="input-controller flex ver-stretch her-stretch">
+                        <span class="input-span number2">姓 名</span>
+                        <input type="text" class="input-controls">
+                    </label>
+                    <label class="input-controller flex ver-stretch her-stretch">
+                        <span class="input-span">身份证号</span>
+                        <input type="text" class="input-controls">
+                    </label>
+                    <label class="input-controller flex ver-stretch her-stretch">
+                        <span class="input-span">手机号码</span>
+                        <input type="tel" class="input-controls">
+                    </label>
+                    <label class="input-controller flex ver-stretch her-stretch">
+                        <span class="input-span number2">性 别</span>
+                        <span type="text" class="input-controls" id="showSex"></span>
+                        <input type="hidden" name="sex_id" id="sexId" value="女">
+
+                    </label>
+                    <label class="input-controller flex ver-stretch her-stretch date-wrapper po-re">
+                        <span class="input-span number2">日 期</span>
+                        <input type="tel" class="input-controls" id="date" readonly>
+                    </label>
+                </div>
+                <a href="javascript:;" class="submit-btn"></a>
+            </div>
+            <div class="tickets-links">
+                <div class="tickets-links-title">点击进入票务微店</div>
+                <a href="javascript:;" class="input-controller flex ver-stretch her-stretch mt0">
+                    <div class="input-check">
+                        <span class="checked"></span>
+                    </div>
+                    <span class="input-controls pd0">特别展览门票</span>
+                    <span class="ticket-price">30元／人</span>
+                </a>
+                <a href="javascript:;" class="input-controller flex ver-stretch her-stretch mt0">
+                    <div class="input-check">
+                        <span class="checked"></span>
+                    </div>
+                    <span class="input-controls pd0">馆藏墓志库门票</span>
+                    <span class="ticket-price">150元／人</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/fastclick.min.js"></script>
+<script src="js/iscroll.js"></script>
+<script src="js/iosSelect.js"></script>
+<script src="js/lCalendar.js"></script>
+<script>
+    ;(function ($) {
+        FastClick.attach(document.body);
+        /*==性别选择==*/
+        var showSexDom = document.querySelector('#showSex');
+        var sexIdDom = document.querySelector('#sexId');
+        showSexDom.addEventListener('click', function () {
+            var sexId = showSexDom.dataset['id'];
+            var sexName = showSexDom.dataset['value'];
+            var sexSelect = new IosSelect(1,
+                    [
+                        [
+                            {'id': '01', 'value': '女'},
+                            {'id': '02', 'value': '男'}
+                        ]
+                    ],
+                    {
+                        container: '.page',
+                        title: '请选择您的性别',
+                        itemHeight: 50,
+                        itemShowCount: 3,
+                        oneLevelId: sexId,
+                        callback: function (selectOneObj) {
+                            sexIdDom.value = selectOneObj.id;
+                            showSexDom.innerHTML = selectOneObj.value;
+                            showSexDom.dataset['id'] = selectOneObj.id;
+                            showSexDom.dataset['value'] = selectOneObj.value;
+                        }
+                    });
+        });
+        /*==日期==*/
+        var newDate = new Date();
+        var newYear = newDate.getFullYear();
+        var newMonth = newDate.getMonth()+1;
+        var newDay = newDate.getDate();
+        var today = newYear+"-"+newMonth+"-"+newDay;
+        var endDay = (newYear+1)+"-"+newMonth+"-"+newDay;
+        $("#date").attr("data-lcalendar",today+", "+endDay);
+        var calendar = new lCalendar();
+        calendar.init({
+            'trigger': '#date',
+            'type': 'date'
+        });
+
+    })(jQuery);
+</script>
+</body>
+</html>

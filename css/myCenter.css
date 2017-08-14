@@ -1,0 +1,104 @@
+@charset "utf-8";
+.content{min-height: 100vh; overflow-x: hidden; position: relative; overflow-y: scroll; }
+.center-head{width: 100%; height: 47.2vw;background: url("../img/center-top.png") no-repeat center center; -webkit-background-size:contain; background-size:contain; padding-top: 12vw;}
+.center-head img{width: 16vw; height: 16vw; margin: 0 auto; border-radius: 50%; border: 1px solid #fff; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+.center-head p{font-size: 0.8rem; color: #333; text-align: center; margin-top: 0.4rem;}
+.center-links{padding-top: 0.9rem; }
+.center-link{height: 2.45rem; padding-left: 1.2rem; padding-right: 1.05rem;}
+.center-link a{width: 100%; height: 100%; -webkit-box-align: end; -ms-flex-align: end; -webkit-align-items: flex-end; align-items: flex-end; border-bottom: 1px solid #a0a0a0;}
+.center-icon{width: 1.5rem; height: 1.5rem; background: url("../img/center-icon.png") no-repeat; -webkit-background-size: 100% auto; background-size: 100% auto; margin-right: 1.25rem;}
+.center-icon1{background-position: center 1.7%;}
+.center-icon2{background-position: center 20.7%;}
+.center-icon3{background-position: center 40%;}
+.center-icon4{background-position: center 59.7%;}
+.center-icon5{background-position: center 1.7%;}
+.center-icon6{background-position: center 1.7%;}
+.center-word{font-size: 0.8rem; color: #333; height: 1.5rem; line-height: 1.5rem;width: 0;flex: 1;}
+.center-arrow{width: 0.675rem; height: 1.5rem ;line-height: 1.5rem; background: url("../img/center-arrow1.png") no-repeat center center; -webkit-background-size: 55% auto; background-size: 55% auto;}
+.center-bottom{position: absolute; width: 100%; left: 0; padding: 0 11.33vw; bottom: 1.2rem; color: #333; font-size: 0.9rem;}
+.center-bottom a{padding-left: 1.5rem; height: 1.5rem; line-height: 1.5rem; background: url("../img/center-icon.png") no-repeat; font-size: 0.8rem; color: #333;}
+a.setting-btn{background-position: -0.1rem 78.3%; -webkit-background-size: 1.7rem auto; background-size: 1.7rem auto;}
+a.signOut-btn{background-position: -0.1rem 97%; -webkit-background-size: 1.7rem auto; background-size: 1.7rem auto;}
+/*==设置==*/
+.change-head{font-size: 0; width: 2.2rem; height: 2.2rem; border-radius: 50%; overflow: hidden; position: relative;}
+.change-head img{width: 2.2rem; height: 2.2rem; border-radius: 50%;}
+.change-head input{width: 100%; height: 100%; position: absolute; left: 0; top: 0; opacity: 0;}
+.info-lists li{height: 2.775rem; position: relative; color: #333333; font-size: 0.875rem;padding: 0 1.45rem; border-top: 1px solid #848484;}
+.info-lists li:first-child{height: 3rem; border-top: none;}
+.info-show{font-size: 0.75rem; text-align: right; color: #373635; padding-right: 0.8rem; background: url("../img/center-arrow.png") no-repeat right center; -webkit-background-size: auto 76%; background-size: auto 76%;}
+/*==设置内容==*/
+.change-btns{width: 100%; height: 1.7rem; line-height: 1.7rem; background-color: #5f313e;}
+.change-btns a{font-size: 0.8rem; color: #fff; padding: 0 1.5rem;}
+.change-input{height: 2.375rem; line-height: 2.375rem; border: 1px solid #5f313e; margin: 0.75rem; padding: 0 0 0 0.625rem; border-radius: 0.2rem;}
+.change-input input{ font-size: 0.8rem; color: #010101; width: 70%;}
+.info-delete{width: 1.5rem; background: url("../img/delete.png") no-repeat center center; -webkit-background-size: 70% auto; background-size: 70% auto;}
+.info-notice{font-size: 0.45rem; color: #373635; padding-left: 1.375rem;}
+/*==我的问卷调查修改==*/
+.survey-logo{width: 14.4vw; margin: 0 auto;}
+.survey-title{width: 22.3vw; margin: 0.2rem auto;}
+.survey-wrapper{padding: 0.3rem 1.85rem 3.5rem; line-height: 1.1rem;}
+.survey-name{font-size: 0.7rem; color: #000000; text-indent: 1.4rem; line-height: 1.1rem;}
+.survey-list{padding: 1rem 0; border-bottom: 1px solid #5f313e;}
+.question-title{color: #000000; font-size: 0.725rem; margin-bottom: 0.5rem;}
+.input-controller{-webkit-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; padding-top: 0.5rem;}
+.input-des{color: #000000; font-size: 0.725rem; margin-left: 0.75rem;}
+.input-controls{position: relative; margin-top: -0.1rem;}
+.input-controls input{width: 100%; height: 100%; position: absolute; left: 0; top: 0; opacity: 0;}
+.input-controls input:checked+.check-box span{background-color: #5f313e; border-color: transparent;}
+.check-box span{display: block; width: 0.5rem; height: 0.5rem; background: transparent; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; border: 0.15rem solid #000000; border-radius: 50%;}
+.expound-show{font-size: 0.6rem; color: #3d3d3d;background: transparent url("../img/textarea-bg.png") repeat-y; -webkit-background-size: 100% 1.45rem; background-size: 100% 1.45rem; text-indent: 1.2rem; padding-top: 0.3rem; line-height: 1.35rem; }
+.expound-textarea{width: 100%; height: 4.6rem; font-size: 0.6rem; color: #3d3d3d; resize: none; background: transparent url("../img/textarea-bg.png") repeat-y; -webkit-background-size: 100% 1.45rem; background-size: 100% 1.45rem; text-indent: 1.2rem; padding-top: 0.3rem; line-height: 1.35rem; overflow: hidden;}
+.survey-judge .input-controller{margin-right: 0.75rem;}
+.survey-judge .check-box{width: 0.5rem; height: 0.5rem; border: 1px solid #11100f; overflow: visible; position: relative;}
+.survey-judge .input-des{margin-left: 0.25rem;}
+.survey-judge span{border: none; position: absolute; width: 0.75rem; height: 0.675rem; left: -0.125rem; top: -0.2rem;}
+.survey-judge input:checked+.check-box span{background: url("../img/check.png") no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%; }
+.survey-btn{display: block; width: 14.3vw; height: 6.4vw; background: url("../img/edit-btn.png") no-repeat center center; -webkit-background-size: contain; background-size: contain; margin: 1.5rem auto 2rem;}
+/*==问卷调查==*/
+.survey-check-wrapper{padding: 2rem 1.85rem 0.5rem; position: relative;}
+.survey-check{-webkit-box-align: end; -ms-flex-align: end; -webkit-align-items: flex-end; align-items: flex-end; width: 61.7vw;}
+.survey-check span{color: #5f313e; font-size: 0.75rem; white-space: nowrap;}
+.survey-check input{flex: 1; width: 0; font-size: 0.75rem;  color: #5f313e; border-bottom: 1px solid #5f313e; margin-left: 0.2rem;padding-left: 0.2rem; margin-right: 0.3rem;}
+.survey-code{width: 15.7vw; height: 6.13vw; background-color: #5c303d;}
+.survey-code img{height: 100%;}
+.survey-submit{position: absolute; right: 1.85rem; bottom: 0.5rem; width: 14.3vw; height: 6.45vw; background: url("../img/submit-btn.png") no-repeat center center; -webkit-background-size: contain;background-size: contain;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

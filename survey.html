@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-cache"/>
+    <meta name="renderer" content="webkit"/>
+    <meta name="author" content="SIRMly">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/myCenter.css">
+    <title>大唐西市</title>
+</head>
+<body>
+<div class="page" id="">
+    <div class="container">
+        <div class="content">
+            <img src="img/login-logo.png" alt="" class="survey-logo"/>
+            <div class="survey-title">
+                <img src="img/survey-title.png" alt=""/>
+            </div>
+            <div class="survey-wrapper">
+                <p class="survey-name">这一次的调查主办单位和调查人员的身份是什么，这次调查的原因是什么？这些都是非常重要的</p>
+                <div class="survey-list survey-single">
+                    <div class="question-title">1.您对本次会议的学术内容是否满意？（单选题）</div>
+                    <div>
+                        <label class="input-controller flex her-start">
+                            <div class="input-controls">
+                                <input type="radio" name="quesiton1"/>
+                                <div class="check-box">
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="input-des">不满意</div>
+                        </label>
+                        <label class="input-controller flex her-start">
+                            <div class="input-controls">
+                                <input type="radio" name="quesiton1"/>
+                                <div class="check-box">
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="input-des">根本不满意</div>
+                        </label>
+                        <label class="input-controller flex her-start">
+                            <div class="input-controls">
+                                <input type="radio" name="quesiton1"/>
+                                <div class="check-box">
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="input-des">一点也不满意</div>
+                        </label>
+                    </div>
+                </div>
+                <div class="survey-list survey-multiple">
+                    <div class="question-title">2.您对本次会议的学术内容是否满意？（多选题）</div>
+                    <div>
+                        <label class="input-controller flex her-start">
+                            <div class="input-controls">
+                                <input type="checkbox" name="quesiton2"/>
+                                <div class="check-box">
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="input-des">不满意</div>
+                        </label>
+                        <label class="input-controller flex her-start">
+                            <div class="input-controls">
+                                <input type="checkbox" name="quesiton2"/>
+                                <div class="check-box">
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="input-des">根本不满意</div>
+                        </label>
+                        <label class="input-controller flex her-start">
+                            <div class="input-controls">
+                                <input type="checkbox" name="quesiton2"/>
+                                <div class="check-box">
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="input-des">一点也不满意</div>
+                        </label>
+                    </div>
+                </div>
+                <div class="survey-list survey-expound">
+                    <div class="question-title">3.还有啥要说的赶紧说</div>
+                    <div>
+                        <textarea name="" id="expound-textarea" class="expound-textarea" maxlength="60"></textarea>
+                    </div>
+                </div>
+                <div class="survey-list survey-judge">
+                    <div class="question-title">4.说我说的对不</div>
+                    <div class="judge-lists flex her-start ver-center">
+                        <label class="input-controller flex her-start">
+                            <div class="input-controls">
+                                <input type="radio" name="quesiton2"/>
+                                <div class="check-box">
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="input-des">是</div>
+                        </label>
+                        <label class="input-controller flex her-start">
+                            <div class="input-controls">
+                                <input type="radio" name="quesiton2"/>
+                                <div class="check-box">
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="input-des">否</div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="survey-check-wrapper">
+                <div class="survey-check flex her-stretch">
+                    <span>验证码：</span>
+                    <input type="text">
+                    <div class="survey-code">
+                        <img src="img/survey-check.png" alt="">
+                    </div>
+                </div>
+                <a href="javascript:;" class="survey-submit"></a>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/fastclick.min.js"></script>
+<script>
+    ;(function (jQuery) {
+        FastClick.attach(document.body);
+    })($);
+</script>
+</body>
+</html>
