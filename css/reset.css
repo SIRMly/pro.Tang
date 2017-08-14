@@ -9,18 +9,18 @@ address, caption, cite, code, dfn, em, strong, th, var {font-style: normal;font-
 a { text-decoration: none; }
 img {border: none ; }
 li, ol, ul { list-style: none; }
-input, textarea {border: none;  border: 0;  outline: 0;  background-color: transparent;  -webkit-appearance: none; }
+input, textarea {border: none; border: 0; outline: 0; background-color: transparent; -webkit-appearance: none; }
 textarea{overflow: auto;}
-button, input, select, textarea {  font: 14px Verdana, Helvetica, Arial, sans-serif ;}
-table {  border-collapse: collapse; }
+button, input, select, textarea {font: 14px Verdana, Helvetica, Arial, sans-serif ;}
+table {border-collapse: collapse; }
 html {overflow-y: scroll;}
-a, button, input, select, textarea { -webkit-tap-highlight-color: rgba(255, 255, 255, 0); }
-input::-webkit-inner-spin-button, input::-webkit-outer-spin-button { -webkit-appearance: none !important;  margin: 0  ;}
-button, input[type=submit], input[type=reset], input[type=button] { -webkit-appearance: none;}
-input[type=number] { -moz-appearance: textfield;  }
-.clearfix:after, .clearfix:before {  content: "";  display: block;  height: 0;  clear: both;  visibility: hidden;}
-.pull-left { float: left;}
-.pull-right { float: right;}
+a, button, input, select, textarea {-webkit-tap-highlight-color: rgba(255, 255, 255, 0); }
+input::-webkit-inner-spin-button, input::-webkit-outer-spin-button {-webkit-appearance: none !important;  margin: 0  ;}
+button, input[type=submit], input[type=reset], input[type=button] {-webkit-appearance: none;}
+input[type=number]{ -moz-appearance: textfield;  }
+.clearfix:after, .clearfix:before{content: "";  display: block;  height: 0;  clear: both;  visibility: hidden;}
+.pull-left{float: left;}
+.pull-right{float: right;}
 .hide{display: none; }
 html{font-size:20px}
 @media only screen and (min-width:400px){html{font-size:21.33px!important}}
