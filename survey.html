@@ -135,6 +135,15 @@
 <script>
     ;(function (jQuery) {
         FastClick.attach(document.body);
+        /*==底部input问题==*/
+        var interval;
+        $("input").focus(function () {
+            interval = setInterval(function () {
+                document.body.scrollTop = document.body.scrollHeight
+            }, 100)
+        }).blur(function () {
+            clearInterval(interval);
+        });
     })($);
 </script>
 </body>
