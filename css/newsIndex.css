@@ -221,6 +221,6 @@ a.display-more-btn{position: absolute; width: 33.3vw; height: 13.3vw; right: 8vw
 .search-links{margin: 1.35rem 2.125rem 0 0.825rem; -webkit-box-lines: multiple; -webkit-flex-wrap: wrap; -moz-flex-wrap: wrap;  -ms-flex-wrap: wrap; -o-flex-wrap: wrap; flex-wrap: wrap;}
 .search-links a{color: #626262; font-size: 0.6rem; margin-left: 1.3rem;}
 /*==我的门票==*/
-.my-ticket .word-card-bottom{ font-size: 0.225rem; color: #393939; white-space: nowrap;}
+.my-ticket .word-card-bottom{ font-size: 0.6rem; color: #393939; white-space: nowrap;}
 .my-ticket-bottom .news-date{width: auto; }
 .news-date.done{color: #767676; font-size: 0.6rem;}
