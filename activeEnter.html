@@ -14,7 +14,7 @@
     <title>大唐西市</title>
 </head>
 <body>
-<div class="page">
+<div class="page active-enter">
     <div class="container">
         <div class="content">
             <div class="article-wrapper po-re">
@@ -74,6 +74,15 @@
         </div>
     </div>
 </div>
+<div class="page success-notice">
+    <div class="notice-content">
+        <img src="img/succ-show.png" alt=""/>
+        <p class="notice-btns po-re">
+            <a href="javascript:;" class="notice-timeout">报名状态查看</a>
+            <a href="javascript:;" class="notice-link">点击返回首页</a>
+        </p>
+    </div>
+</div>
 <script src="js/jquery.min.js"></script>
 <script src="js/fastclick.min.js"></script>
 <script>
@@ -86,6 +95,11 @@
             } else {
                 $(this).addClass("active");
             }
+        });
+        /*==提交成功==*/
+        $(".submit-btn").on("click", function (){
+           $(".active-enter").hide();
+           $(".success-notice").show();
         });
     })(jQuery);
 </script>

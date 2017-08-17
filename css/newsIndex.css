@@ -224,3 +224,11 @@ a.display-more-btn{position: absolute; width: 33.3vw; height: 13.3vw; right: 8vw
 .my-ticket .word-card-bottom{ font-size: 0.6rem; color: #393939; white-space: nowrap;}
 .my-ticket-bottom .news-date{width: auto; }
 .news-date.done{color: #767676; font-size: 0.6rem;}
+/*==提交成功提示==*/
+.success-notice{position: fixed; left: 0; top: 0; padding-top: 50%; display: none;}
+/*.notice-content{margin-top: 30%;}*/
+.notice-content img{width: 28.93vw; margin: 0 auto;}
+.notice-btns{height: 1rem; width: 100%; margin-top: 0.8rem;}
+.notice-btns a{font-size: 0.6rem; color: #5f313e; border-bottom: 1px solid #5f313e; position: absolute;}
+.notice-timeout{right: 50%; margin-right: 0.5rem;}
+.notice-link{left: 50%; margin-left: 0.5rem;}

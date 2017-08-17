@@ -24,33 +24,7 @@
             </div>
             <div id="index-slider">
                 <div class="swiper-container" id="swiper-index">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <a href="##">
-                                <img src="img/index-slider.png" alt=""/>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="##">
-                                <img src="img/index-slider.png" alt=""/>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="##">
-                                <img src="img/index-slider.png" alt=""/>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="##">
-                                <img src="img/index-slider.png" alt=""/>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="##">
-                                <img src="img/index-slider.png" alt=""/>
-                            </a>
-                        </div>
-                    </div>
+
                 </div>
             </div>
             <div class="part part-borders">
@@ -169,13 +143,13 @@
                     </a>
                 </div>
                 <p class="clearfix">
-                    <a href="##" class="index-more pull-right">更多</a>
+                    <a href="activeList.html" class="index-more pull-right">更多</a>
                 </p>
             </div>
             <div class="index-links po-re">
                 <img src="img/index-links.png" alt="">
                 <a href="activeEnter.html" class="index-link to-activeEnter"></a>
-                <a href="mySurvey.html" class="index-link to-survey"></a>
+                <a href="surveyList.html" class="index-link to-survey"></a>
                 <a href="voice.html" class="index-link to-voice"></a>
             </div>
             <div class="index-bottom clearfix">
@@ -191,6 +165,18 @@
 <script>
     ;(function ($){
         FastClick.attach(document.body);
+        var data=[
+            {"img":"img/index-slider.png"},
+            {"img":"img/index-slider.png"},
+            {"img":"img/index-slider.png"}
+        ];
+        var html= "";
+        for(var i=0; i<data.length;i++){
+            html+='<div class="swiper-slide"><a href="##"><img src="'+data[i].img+'"></a></div>'
+        }
+        var container = '<div class="swiper-wrapper"></div>';
+        $("#swiper-index").append(container);
+        $(".swiper-wrapper").append(html);
         var swiperTop = new Swiper('#swiper-index',{
             simulateTouch: false,
             slidesPerView: 1,
@@ -198,7 +184,10 @@
             spaceBetween: 0,
             loop: true,
             autoplay: 2500,
-            autoplayDisableOnInteraction: false
+            //autoplay: false,
+            autoplayDisableOnInteraction: false,
+            observer:true,
+            observeParents:true
         });
         /*==回到顶部==*/
         $(".toTop").on("click", function () {

@@ -21,32 +21,6 @@
         <div class="content">
             <div id="topSlider">
                 <div class="swiper-container" id="swiper-top">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <a href="##">
-                                <img src="img/newsIndex-top.png" alt=""/>
-                                <p class="top-slider-word">重回璀璨大唐盛世</p>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="##">
-                                <img src="img/newsIndex-top.png" alt=""/>
-                                <p class="top-slider-word">重回璀璨大唐盛世</p>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="##">
-                                <img src="img/newsIndex-top.png" alt=""/>
-                                <p class="top-slider-word">重回璀璨大唐盛世</p>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="##">
-                                <img src="img/newsIndex-top.png" alt=""/>
-                                <p class="top-slider-word">重回璀璨大唐盛世</p>
-                            </a>
-                        </div>
-                    </div>
                 </div>
             </div>
             <div class="news-content" id="list-wrapper">
@@ -103,6 +77,18 @@
 <script src="js/swiper.jquery.min.js"></script>
 <script>
     ;(function ($){
+        var data=[
+            {"img":"img/newsIndex-top.png","p":"重回璀璨大唐盛世"},
+            {"img":"img/newsIndex-top.png","p":"重回璀璨大唐盛世"},
+            {"img":"img/newsIndex-top.png","p":"重回璀璨大唐盛世"}
+        ];
+        var html= "";
+        for(var i=0; i<data.length;i++){
+            html+='<div class="swiper-slide"><a href="##"><img src="'+data[i].img+'"><p class="top-slider-word">'+data[i].p+'</p></a></div>'
+        }
+        var container = '<div class="swiper-wrapper"></div>';
+        $("#swiper-top").append(container);
+        $(".swiper-wrapper").append(html);
         var swiperTop = new Swiper('#swiper-top',{
             simulateTouch: false,
             slidesPerView: 1,
@@ -110,7 +96,9 @@
             spaceBetween: 0,
             loop: true,
             autoplay: 2500,
-            autoplayDisableOnInteraction: false
+            autoplayDisableOnInteraction: false,
+            observer:true,
+            observeParents:true
         });
     })(jQuery);
 </script>
