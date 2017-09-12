@@ -197,8 +197,8 @@ p.ticket-title{text-align: center; margin-bottom: 1.25rem;}
 .tickets-links-title:after{left: auto; right: 0;}
 /*==首页==*/
 .index-top{width: 100%; height: 2.1rem; line-height: 2.1rem; padding: 0.45rem 0.5rem; position: relative;}
-.to-center{position: absolute; width: 1.2rem; height: 1.2rem; background: url("../img/icon.png") no-repeat; -webkit-background-size:1.76rem auto; background-size:1.76rem auto; background-position: center 77.4%; left: 0.5rem; top: 0.45rem;}
-.to-search{display: block; margin-left: 1.625rem; height: 100%; border-radius: 0.2rem; background: #f1e8d6 url("../img/icon.png") no-repeat; -webkit-background-size:2rem auto; background-size:2rem auto; background-position: right 88.6%;}
+.to-center{position: absolute; width: 1.2rem; height: 1.2rem; background: url("../img/icon.png") no-repeat; -webkit-background-size:1.76rem auto; background-size:1.76rem auto; background-position: center 72.4%; left: 0.5rem; top: 0.45rem;}
+.to-search{display: block; margin-left: 1.625rem; height: 100%; border-radius: 0.2rem; background: #f1e8d6 url("../img/icon.png") no-repeat; -webkit-background-size:2rem auto; background-size:2rem auto; background-position: right 81.6%;}
 .part{margin: 0.6rem 0.35rem;}
 .part-borders{ background: url("../img/index-border.png") no-repeat; -webkit-background-size:100% 100%; background-size:100% 100%;}
 .part-title{width: 32.8vw; margin: 0 auto; padding-top: 0.7rem;}
