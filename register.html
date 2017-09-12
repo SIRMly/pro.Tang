@@ -22,17 +22,24 @@
         <div class="form-content">
             <div class="input-item">
                 <label class="input-controller">
+                    <span class="icon-span my-user-icon"></span>
+                    <input type="text" placeholder="输入用户名" class="input-controls"/>
+                </label>
+                <div class="error">用户名过长！</div>
+            </div>
+            <div class="input-item">
+                <label class="input-controller">
+                    <span class="icon-span mail-icon"></span>
+                    <input type="text" placeholder="输入邮箱" class="input-controls"/>
+                </label>
+                <div class="error">请输入正确的邮箱！</div>
+            </div>
+            <div class="input-item">
+                <label class="input-controller">
                     <span class="icon-span phone-icon"></span>
                     <input type="tel" placeholder="输入手机号" class="input-controls"/>
                 </label>
                 <div class="error">请输入正确的手机号码！</div>
-            </div>
-            <div class="input-item check-code flex ver-center her-stretch">
-                <label class="input-controller">
-                    <input type="text" placeholder="输入验证码" maxlength="4" class="input-controls"/>
-                </label>
-                <span class="get-code">获取验证码</span>
-                <div class="error">验证码错误！</div>
             </div>
             <div class="input-item">
                 <label class="input-controller">
@@ -41,26 +48,25 @@
                 </label>
                 <div class="error">密码格式不正确！</div>
             </div>
-            <div class="input-item">
+            <div class="input-item check-code flex ver-center her-stretch">
                 <label class="input-controller">
-                    <span class="icon-span pass-icon"></span>
-                    <input type="password" placeholder="确认登录密码，不少于六位" class="input-controls"/>
+                    <span class="icon-span my-check-icon"></span>
+                    <input type="text" placeholder="输入验证码" maxlength="4" class="input-controls"/>
                 </label>
-                <div class="error">两次输入密码不一致！</div>
+                <span class="my-check-code"><img src="img/my-check-code.png" alt=""></span>
+                <div class="error">验证码错误！</div>
             </div>
-            <div class="check-label flex ver-center">
-                <label class="checkbox-wrapper">
-                    <input type="checkbox" checked class="checkbox-input"/>
-                    <div class="checkbox-show"></div>
-                </label>
-                <span class="checkbox-word">同意<a href="javascript:;">《大唐西市博物馆网站隐私政策》</a></span>
-            </div>
-            <a href="##" class="register-btn"></a>
+            <a href="javascript:;" class="register-btn"></a>
         </div>
     </div>
-
     <div id="register-done">
-        <div class="register-done-inner"></div>
+        <div class="register-succ-inner">
+            <img src="img/register-succ.png" alt=""/>
+            <a href="login.html">返回登陆</a>
+        </div>
+        <div class="register-error-inner">
+            <img src="img/register-error.png" alt=""/>
+        </div>
     </div>
 </div>
 <script src="js/jquery.min.js"></script>
@@ -68,22 +74,15 @@
 <script>
     ;(function ($){
         FastClick.attach(document.body);
-        /*==获取验证码点击事件==*/
-        getCodeClick();
-        function getCodeClick(){
-            $(".get-code").on("click", function (){
-                $(this).off("click").addClass("disabled");
-            });
-        }
-        /*==后端注意！！获取验证码倒计时之后还要再执行 getCodeClick()==*/
-
-        /*==注册成功后提示，1.5s后跳到登陆页面==*/
         $(".register-btn").on("click", function (){
-            $("#register-done").fadeIn(200, function (){
-                setTimeout(function (){
-                    window.location.href = "login.html";
-                },1500);
-            })
+            /*==成功==*/
+            $("#register-done").addClass("succ").fadeIn(200);
+//            /*==失败==*/
+//            $("#register-done").addClass("error").fadeIn(200, function (){
+//                setTimeout(function (){
+//                    $("#register-done").fadeOut(200).addClass("error");
+//                },1500)
+//            });
         });
     })(jQuery);
 </script>

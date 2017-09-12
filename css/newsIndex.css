@@ -7,7 +7,7 @@
 .news-content{padding-bottom: 3rem;}
 .card{background: transparent; margin: 0; box-shadow: none; padding: 0.7rem 0.6rem; position: relative;}
 .word-card a{width:100%; display: -webkit-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; -webkit-justify-content: space-between; justify-content: space-between; -webkit-box-align: stretch; -ms-flex-align: stretch; -webkit-align-items: stretch; align-items: stretch;}
-.word-card-img{ font-size: 0; -webkit-flex: 1; -ms-flex: 1; flex: 1; -webkit-box-flex: 1; -moz-box-flex: 1; -ms-box-flex: 1; box-flex: 1; height: 19.6vw;}
+.word-card-img{ font-size: 0; -webkit-flex: 1; -ms-flex: 1; flex: 1; -webkit-box-flex: 1; -moz-box-flex: 1; -ms-box-flex: 1; box-flex: 1; height: 19.6vw; position: relative;}
 .card img{height: 100%;}
 .word-card-words{ -webkit-flex: 2; -ms-flex: 2; flex: 2; -webkit-box-flex: 2; -moz-box-flex: 2; -ms-box-flex: 2; box-flex: 2; padding-left: 0.4rem; position: relative; padding-top: 0.1rem; }
 .word-card-title{color: #595757; font-size: 0.7rem; line-height: 1rem; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; text-overflow: ellipsis; position: relative;}
@@ -121,7 +121,7 @@ video::-webkit-media-controls { display:none !important; }
 .display-detail .article-wrapper{border-bottom: none; margin-bottom: 1.5rem;}
 .display-detail .point-num{margin-top: 2.4rem;}
 .display-detail .read-num{margin-right: 1.2rem;}
-.display-share{width: 1rem; height: 1rem; background: url("../img/icon.png") no-repeat; -webkit-background-size: 210% auto; background-size: 210% auto; background-position: center 55.5%;}
+.display-share{width: 1rem; height: 1rem; background: url("../img/icon.png") no-repeat; -webkit-background-size: 210% auto; background-size: 210% auto; background-position: center 54.5%;}
 /*==语音导览==*/
 .voice-title{width: 26.4vw; margin: 0.85rem auto 0.2rem;}
 .voice-card .word-card-img{height: 19.4vw;}
@@ -135,9 +135,11 @@ video::-webkit-media-controls { display:none !important; }
 .voice-detail-title span{position: absolute; left: 50%; -webkit-transform: translateX(-50%); -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); transform: translateX(-50%); height: 100%; top: 0;}
 .voice-detail-title-word:before,.voice-detail-title-word:after{content: ""; width: 1.65rem; height: 2.58rem; background: url("../img/voice-detile-title.png") no-repeat; -webkit-background-size: 450.77%  auto; background-size: 450.77%  auto; background-position: 0 center; position: absolute; top: 0; left: -1.65rem; border: none;}
 .voice-detail-title-word:after{left: auto; right: -1.65rem; background-position: 100% center;}
-.voice-btn{position: absolute; width: 1.2rem; height: 1.2rem; background: url("../img/icon.png") no-repeat; -webkit-background-size: 140% auto; background-size: 140% auto;background-position: center 67%; bottom: 0.3rem; left: 0.4rem;}
+.voice-btn{position: absolute; width: 1.2rem; height: 1.2rem; background: url("../img/icon.png") no-repeat; -webkit-background-size: 140% auto; background-size: 140% auto;background-position: center 63.6%; bottom: 0.3rem; left: 0.4rem;}
 .voice-btn.played{background: url("../img/voice-play.gif") no-repeat center center; -webkit-background-size: 90% auto; background-size: 90% auto;}
 p.voice-small{font-size: 0.55rem; color: #5f313e; text-align: right; margin-top: -0.2rem;}
+.share-crash{width: 100%; height: 100%; position: absolute; top: 0; left: 0; background-color: rgba(0,0,0,0.6); padding-right: 4.67vw; padding-top: 6vw; display: none;}
+.share-crash img{float: right; width: 29.6vw;}
 /*==我的活动==*/
 .my-active .card:last-of-type:after{content: ""; display: block; height: 0.05rem; position: absolute; left: 0.5rem; right: 0.5rem; bottom: 0; background-color: #6b3e48;}
 .active-done{font-size: 0.6rem; color: #767676; font-weight: bold;}
@@ -215,11 +217,14 @@ a.display-more-btn{position: absolute; width: 33.3vw; height: 13.3vw; right: 8vw
 .index-bottom img{width: 14.125rem; max-width: 75.33vw;}
 .toTop{width: 1.2rem; height: 1.2rem; background: url("../img/icon.png") no-repeat;-webkit-background-size:145% auto; background-size:145% auto; background-position: center 99.9%;}
 /*==搜索==*/
-.search-input{margin-left: 1.625rem; height: 100%; border-radius: 0.2rem; background: #f1e8d6 url("../img/icon.png") no-repeat; -webkit-background-size:2rem auto; background-size:2rem auto; background-position: right 88.6%;}
+.search-input{margin-left: 1.625rem; height: 100%; border-radius: 0.2rem; background: #f1e8d6 url("../img/icon.png") no-repeat; -webkit-background-size:2rem auto; background-size:2rem auto; background-position: right 81.6%;}
 .search-input input{display: block; height: 100%; width: 70%; padding: 0 0.5rem; font-size: 0.6rem; color: #b4afa5;}
 .search-input a{position: absolute; width: 1.8rem; height: 1.2rem; right: 0; top: 0;}
 .search-links{margin: 1.35rem 2.125rem 0 0.825rem; -webkit-box-lines: multiple; -webkit-flex-wrap: wrap; -moz-flex-wrap: wrap;  -ms-flex-wrap: wrap; -o-flex-wrap: wrap; flex-wrap: wrap;}
 .search-links a{color: #626262; font-size: 0.6rem; margin-left: 1.3rem;}
+.search-pic .word-card-img span{ position: absolute;padding-right: 0.2rem; bottom: 0.2rem; left: 0.2rem; color: #dbdbdb; font-size: 0.6rem; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; background: rgba(0,0,0,0.5) url(../img/pic-icon.png) no-repeat 0.25rem center; -webkit-background-size: auto 0.53rem; background-size: auto 0.53rem; text-indent: 0.9rem;}
+.search-video .word-card-img span{ position: absolute; padding: 0 0.2rem; bottom: 0.2rem; right: 0.2rem; color: #dbdbdb; font-size: 0.6rem; text-align: right; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;background-color: rgba(0,0,0,0.5);}
+.search-result{display: none;}
 /*==我的门票==*/
 .my-ticket .word-card-bottom{ font-size: 0.6rem; color: #393939; white-space: nowrap;}
 .my-ticket-bottom .news-date{width: auto; }

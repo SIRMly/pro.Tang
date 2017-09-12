@@ -22,17 +22,27 @@
         <div class="form-content">
             <div class="input-item">
                 <label class="input-controller">
-                    <span class="icon-span mail-icon"></span>
-                    <input type="text" placeholder="输入邮箱" class="input-controls"/>
+                    <span class="icon-span my-user-icon"></span>
+                    <input type="text" placeholder="手机/邮箱/用户名" class="input-controls"/>
+                    <div class="error">用户名与密码不匹配！</div>
                 </label>
-                <div class="error">用户名和密码不匹配！</div>
             </div>
             <div class="input-item">
                 <label class="input-controller">
                     <span class="icon-span pass-icon"></span>
                     <input type="password" placeholder="密码" class="input-controls"/>
                 </label>
-                <div class="error">啥啥啥写错</div>
+                <div class="error">密码格式不正确！</div>
+            </div>
+            <div class="input-item check-code flex ver-center her-stretch">
+                <label class="input-controller">
+                    <span class="icon-span my-check-icon"></span>
+                    <input type="text" placeholder="输入验证码" maxlength="4" class="input-controls"/>
+                </label>
+                <span class="my-check-code">
+                    <img src="img/my-check-code.png" alt="">
+                </span>
+                <div class="error">验证码错误！</div>
             </div>
             <a href="forget.html" class="toForget">忘记密码?</a>
             <a href="##" class="btns login-btn"></a>
