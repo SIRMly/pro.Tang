@@ -156,16 +156,24 @@ p.voice-small{font-size: 0.55rem; color: #5f313e; text-align: right; margin-top:
 .input-span{font-size: 0.8rem; color: #000; background-color: #bea7a1; width: 3.8rem; text-align: center; border-right: 0.125rem solid #60313e; pointer-events: none;}
 .input-span.number2{word-spacing: 1.4rem;}
 .input-controls{flex: 1; padding: 0 0.75rem; font-size: 0.8rem; color: #000;}
+.active-enter .input-controller,.page-code .input-controller{display: -webkit-box; display: -ms-flexbox; display: -webkit-flex; display: flex;-webkit-box-align: stretch; -ms-flex-align: stretch; -webkit-align-items: stretch; align-items: stretch;-webkit-box-pack: justify; -ms-flex-pack: justify; -webkit-justify-content: space-between; justify-content: space-between;}
+.selectedInput{position: relative;}
+.selectedInput:after{position: absolute; content: ""; width: 0; height: 0; border: 0.5rem solid #5f313e; border-color: #5f313e transparent transparent transparent; right: 0.5rem; top: 0.45rem;}
 .text-controller{height: 5rem; line-height: 5rem;}
 .text-controls{flex: 1; padding: 0.2rem 0.75rem; font-size: 0.8rem; color: #000; resize: none;}
 .submit-btn{display: block; margin: 2.85rem auto 0; width: 16.8vw; height: 8.13vw; background: url("../img/submit-btn.png") no-repeat center center; -webkit-background-size: contain;background-size: contain;}
+.hotelTrue.notShow{display: none;}
+.address{padding: 0;}
+.address .addre-item{width: 50%; height: 100%; float: left; padding: 0 0.75rem; position: relative;}
+.addre-item span{display: block; width: 100%; height: 100%; font-size: 0.8rem; color: #000;}
 /*==二维码==*/
 .code-title{width: 17.33vw; margin: 0.65rem auto 0.35rem;}
 .code-wrapper{width: 73.2vw; height: 73.2vw; margin: 0 auto; background: url("../img/code-bg.png") no-repeat top center; -webkit-background-size: 100% auto; background-size: 100% auto; padding-top:5vw;}
 .code-wrapper img{display: block; width: 59.33vw; margin: 0 auto;}
 .code-notice{font-size: 0.6rem; color: #5f313e; text-align: center;}
 .page-code .form-content{padding: 0 0.5rem;}
-.page-code .input-span{background-color: transparent;}
+.page-code .input-span{background-color: transparent; border-right: none;}
+.page-code .tickets-links{margin-top: 2.5rem;}
 .mt0{margin-top: -0.125rem;}
 .input-check{width: 1.4rem; align-self: center; -webkit-align-self: center; flex-item-align: center; }
 .input-check span{ display: block; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; width: 0.5rem; height: 0.5rem; border: 0.17rem solid #5f313e; background-color: transparent; border-radius: 50%; margin: 0 auto;}
@@ -185,13 +193,15 @@ p.ticket-title{text-align: center; margin-bottom: 1.25rem;}
 .border-left,.border-right{position: absolute; width: 2.13vw; background: url("../img/border-left.png") repeat-y ; -webkit-background-size:100% auto; background-size:100% auto; top:13.1vw; bottom: 12.9vw; left: 0;}
 .border-right{right: 0; left: auto;}
 .ios-select-widget-box header.iosselect-header a,.date_btn{color: #0894ec;}
-.date-wrapper:after{ content: ''; position: absolute; width: 0; height: 0; border: 0.5rem solid #5f313e; border-color: #5f313e transparent transparent transparent; right: 0.5rem; top: 0.45rem;}
 .tickets-links{padding: 0 0.5rem 1.6rem;}
 .online-ticket .submit-btn{margin-top: 2.125rem;}
 .online-ticket .enter-wrapper{padding-bottom: 0.8rem;}
 .tickets-links-title{width: 100%; text-align: center; font-size: 0.55rem; color: #7d4a4f; height: 2.5rem; line-height: 2.5rem; position: relative;}
 .tickets-links-title:before,.tickets-links-title:after{height: 0.05rem; border: none; background-color: #5f313e; content: ""; position: absolute; width: calc(50vw - 3.4rem); left: 0; top: 1.245rem;}
 .tickets-links-title:after{left: auto; right: 0;}
+.ticket-succ .content{padding-top: 30vh;}
+.ticket-succ img{width: 31vw; margin: 0 auto 1.25rem;}
+.ticket-succ a{ display: block; height: 1rem; line-height: 1rem; font-size: 0.6rem; text-align: center; color: #5f313e; width: 5.6rem; margin: 0 auto; border-bottom: 1px solid #5f313e;}
 /*==首页==*/
 .index-top{width: 100%; height: 2.1rem; line-height: 2.1rem; padding: 0.45rem 0.5rem; position: relative;}
 .to-center{position: absolute; width: 1.2rem; height: 1.2rem; background: url("../img/icon.png") no-repeat; -webkit-background-size:1.76rem auto; background-size:1.76rem auto; background-position: center 72.4%; left: 0.5rem; top: 0.45rem;}

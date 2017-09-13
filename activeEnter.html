@@ -10,6 +10,8 @@
           content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/iosSelect.css">
+    <link rel="stylesheet" href="css/lCalendar.css">
     <link rel="stylesheet" href="css/newsIndex.css"/>
     <title>大唐西市</title>
 </head>
@@ -44,27 +46,149 @@
             <div class="enter-wrapper">
                 <div class="enter-title"></div>
                 <div class="form-content">
-                    <label class="input-controller flex ver-stretch her-stretch">
+                    <label class="input-controller">
                         <span class="input-span number2">姓 名</span>
                         <input type="text" class="input-controls">
                     </label>
-                    <label class="input-controller flex ver-stretch her-stretch">
+                    <label class="input-controller">
                         <span class="input-span">身份证号</span>
                         <input type="text" class="input-controls">
                     </label>
-                    <label class="input-controller flex ver-stretch her-stretch">
+                    <label class="input-controller">
                         <span class="input-span">手机号码</span>
                         <input type="tel" class="input-controls">
                     </label>
-                    <label class="input-controller flex ver-stretch her-stretch">
-                        <span class="input-span number2">性 别</span>
+                    <label class="input-controller">
+                        <span class="input-span number2">邮 箱</span>
                         <input type="text" class="input-controls">
                     </label>
-                    <label class="input-controller flex ver-stretch her-stretch">
+                    <label class="input-controller">
+                        <span class="input-span number2">Q Q</span>
+                        <input type="text" class="input-controls">
+                    </label>
+                    <label class="input-controller selectedInput">
+                        <span class="input-span">家庭情况</span>
+                        <span class="input-controls" id="showFamily"></span>
+                        <input type="hidden" name="sex_id" id="FamilyId" value="">
+                    </label>
+                    <label class="input-controller">
+                        <span class="input-span number2">兴 趣</span>
+                        <input type="text" class="input-controls">
+                    </label>
+                    <label class="input-controller selectedInput">
+                        <span class="input-span number2">性 别</span>
+                        <span class="input-controls" id="showSex"></span>
+                        <input type="hidden" name="sex_id" id="sexId" value="">
+                    </label>
+                    <label class="input-controller">
                         <span class="input-span number2">年 龄</span>
                         <input type="tel" class="input-controls">
                     </label>
-                    <label class="input-controller flex ver-stretch her-stretch text-controller">
+                    <label class="input-controller selectedInput">
+                        <span class="input-span number2">血 型</span>
+                        <span class="input-controls" id="showBlood"></span>
+                        <input type="hidden" name="sex_id" id="bloodId" value="">
+                    </label>
+                    <label class="input-controller selectedInput">
+                        <span class="input-span number2">婚 姻</span>
+                        <span class="input-controls" id="showMarrige"></span>
+                        <input type="hidden" name="sex_id" id="marrigeId" value="">
+                    </label>
+                    <label class="input-controller">
+                        <span class="input-span number2">生 日</span>
+                        <input type="text" id="birthday" class="input-controls">
+                    </label>
+                    <label class="input-controller">
+                        <span class="input-span number2">专 业</span>
+                        <input type="tel" class="input-controls">
+                    </label>
+                    <label class="input-controller">
+                        <span class="input-span number2">学 校</span>
+                        <input type="tel" class="input-controls">
+                    </label>
+                    <label class="input-controller">
+                        <span class="input-span number2">单 位</span>
+                        <input type="tel" class="input-controls">
+                    </label>
+                    <label class="input-controller">
+                        <span class="input-span number2">职 位</span>
+                        <input type="tel" class="input-controls">
+                    </label>
+                    <label class="input-controller">
+                        <span class="input-span number2">传 真</span>
+                        <input type="tel" class="input-controls">
+                    </label>
+                    <label class="input-controller selectedInput">
+                        <span class="input-span">参加人数</span>
+                        <span class="input-controls" id="showNum"></span>
+                        <input type="hidden" name="sex_id" id="numId" value="">
+                    </label>
+                    <label class="input-controller selectedInput">
+                        <span class="input-span">住宿预订</span>
+                        <span class="input-controls" id="showHotel"></span>
+                        <input type="hidden" name="sex_id" id="hotelId" value="">
+                    </label>
+                    <label class="input-controller hotelTrue notShow">
+                        <span class="input-span">房间数量</span>
+                        <input type="tel" class="input-controls">
+                    </label>
+                    <label class="input-controller hotelTrue notShow">
+                        <span class="input-span">开始日期</span>
+                        <input type="text" id="startDate" class="input-controls">
+                    </label>
+                    <label class="input-controller hotelTrue notShow">
+                        <span class="input-span">结束日期</span>
+                        <input type="text" id="endDate" class="input-controls">
+                    </label>
+                    <label class="input-controller">
+                        <span class="input-span">所学外语</span>
+                        <input type="text" class="input-controls">
+                    </label>
+                    <label class="input-controller">
+                        <span class="input-span number2">民 族</span>
+                        <input type="text" class="input-controls">
+                    </label>
+                    <label class="input-controller">
+                        <span class="input-span number2">特 长</span>
+                        <input type="text" class="input-controls">
+                    </label>
+                    <label class="input-controller">
+                        <span class="input-span number2">户 籍</span>
+                        <div class="input-controls address">
+                            <div class="addre-item selectedInput">
+                                <span id="showProvince"></span>
+                                <input type="hidden" id="provinceId" value="">
+                            </div>
+                            <div class="addre-item selectedInput">
+                                <span id="showCity"></span>
+                                <input type="hidden" id="cityId" value="">
+                            </div>
+                        </div>
+                    </label>
+                    <label class="input-controller selectedInput">
+                        <span class="input-span">备车情况</span>
+                        <span id="showCar" class="input-controls"></span>
+                        <input type="hidden" id="carId" value="">
+                    </label>
+                    <label class="input-controller selectedInput">
+                        <span class="input-span">健康状况</span>
+                        <span id="showHealthy" class="input-controls"></span>
+                        <input type="hidden" id="healthyId" value="">
+                    </label>
+                    <label class="input-controller">
+                        <span class="input-span number2">体 重</span>
+                        <input type="tel" class="input-controls">
+                    </label>
+                    <label class="input-controller">
+                        <span class="input-span number2">身 高</span>
+                        <input type="tel" class="input-controls">
+                    </label>
+                    <label class="input-controller selectedInput">
+                        <span class="input-span number2">星 座</span>
+                        <span id="showStar" class="input-controls"></span>
+                        <input type="hidden" id="starId" value="">
+                    </label>
+                    <label class="input-controller ver-stretch her-stretch text-controller">
                         <span class="input-span number2">文字描述</span>
                         <textarea name="" id="" class="text-controls"></textarea>
                     </label>
@@ -84,10 +208,12 @@
     </div>
 </div>
 <script src="js/jquery.min.js"></script>
-<script src="js/fastclick.min.js"></script>
+<!--<script src="js/fastclick.min.js"></script>-->
+<script src="js/iscroll.js"></script>
+<script src="js/iosSelect.js"></script>
+<script src="js/lCalendar.js"></script>
 <script>
     ;(function ($){
-        FastClick.attach(document.body);
         /*==评论的点赞换图标==*/
         $(".point-hand").on("click", function () {
             if ($(this).hasClass("active")) {
@@ -100,6 +226,360 @@
         $(".submit-btn").on("click", function (){
            $(".active-enter").hide();
            $(".success-notice").show();
+        });
+        /*==家庭情况==*/
+        var showFamilyDom = document.querySelector('#showFamily');
+        var familyIdDom = document.querySelector('#familyId');
+        showFamilyDom.addEventListener('click', function () {
+            var familyId = showFamilyDom.dataset['id'];
+            var familyName = showFamilyDom.dataset['value'];
+            var familySelect = new IosSelect(1,
+                    [
+                        [
+                            {'id': '01', 'value': '健全'},
+                            {'id': '02', 'value': '单亲'}
+                        ]
+                    ],
+                    {
+                        container: '.page',
+                        title: '请选择您的家庭情况',
+                        itemHeight: 50,
+                        itemShowCount: 3,
+                        oneLevelId: familyId,
+                        callback: function (selectOneObj) {
+                            sexIdDom.value = selectOneObj.id;
+                            showFamilyDom.innerHTML = selectOneObj.value;
+                            showFamilyDom.dataset['id'] = selectOneObj.id;
+                            showFamilyDom.dataset['value'] = selectOneObj.value;
+                        }
+                    });
+        });
+        /*==性别选择==*/
+        var showSexDom = document.querySelector('#showSex');
+        var sexIdDom = document.querySelector('#sexId');
+        showSexDom.addEventListener('click', function () {
+            var sexId = showSexDom.dataset['id'];
+            var sexName = showSexDom.dataset['value'];
+            var sexSelect = new IosSelect(1,
+                    [
+                        [
+                            {'id': '01', 'value': '女'},
+                            {'id': '02', 'value': '男'}
+                        ]
+                    ],
+                    {
+                        container: '.page',
+                        title: '请选择您的性别',
+                        itemHeight: 50,
+                        itemShowCount: 3,
+                        oneLevelId: sexId,
+                        callback: function (selectOneObj) {
+                            sexIdDom.value = selectOneObj.id;
+                            showSexDom.innerHTML = selectOneObj.value;
+                            showSexDom.dataset['id'] = selectOneObj.id;
+                            showSexDom.dataset['value'] = selectOneObj.value;
+                        }
+                    });
+        });
+        /*==血型选择==*/
+        var showBloodDom = document.querySelector('#showBlood');
+        var bloodIdDom = document.querySelector('#bloodId');
+        showBloodDom.addEventListener('click', function () {
+            var bloodId = showBloodDom.dataset['id'];
+            var bloodName = showBloodDom.dataset['value'];
+            var bloodSelect = new IosSelect(1,
+                    [
+                        [
+                            {'id': '01', 'value': 'O型'},
+                            {'id': '02', 'value': 'A型'},
+                            {'id': '03', 'value': 'B型'},
+                            {'id': '04', 'value': 'AB型'}
+                        ]
+                    ],
+                    {
+                        container: '.page',
+                        title: '请选择您的血型',
+                        itemHeight: 50,
+                        itemShowCount: 3,
+                        oneLevelId: bloodId,
+                        callback: function (selectOneObj) {
+                            bloodIdDom.value = selectOneObj.id;
+                            showBloodDom.innerHTML = selectOneObj.value;
+                            showBloodDom.dataset['id'] = selectOneObj.id;
+                            showBloodDom.dataset['value'] = selectOneObj.value;
+                        }
+                    });
+        });
+        /*==婚姻选择==*/
+        var showMarrigeDom = document.querySelector('#showMarrige');
+        var marrigeIdDom = document.querySelector('#marrigeId');
+        showMarrigeDom.addEventListener('click', function () {
+            var marrigeId = showMarrigeDom.dataset['id'];
+            var marrigeName = showMarrigeDom.dataset['value'];
+            var marrigeSelect = new IosSelect(1,
+                    [
+                        [
+                            {'id': '01', 'value': '未婚'},
+                            {'id': '02', 'value': '已婚'},
+                            {'id': '03', 'value': '离异'}
+                        ]
+                    ],
+                    {
+                        container: '.page',
+                        title: '请选择您的婚姻状况',
+                        itemHeight: 50,
+                        itemShowCount: 3,
+                        oneLevelId: marrigeId,
+                        callback: function (selectOneObj) {
+                            marrigeIdDom.value = selectOneObj.id;
+                            showMarrigeDom.innerHTML = selectOneObj.value;
+                            showMarrigeDom.dataset['id'] = selectOneObj.id;
+                            showMarrigeDom.dataset['value'] = selectOneObj.value;
+                        }
+                    });
+        });
+        /*==参加人数==*/
+        var showNumDom = document.querySelector('#showNum');
+        var numIdDom = document.querySelector('#numId');
+        showNumDom.addEventListener('click', function () {
+            var numId = showNumDom.dataset['id'];
+            var numName = showNumDom.dataset['value'];
+            var numSelect = new IosSelect(1,
+                    [
+                        [
+                            {'id': '01', 'value': '0-5人'},
+                            {'id': '02', 'value': '5-10人'},
+                            {'id': '03', 'value': '10-15人'},
+                            {'id': '04', 'value': '更多'}
+                        ]
+                    ],
+                    {
+                        container: '.page',
+                        title: '请选择您的参加人数',
+                        itemHeight: 50,
+                        itemShowCount: 3,
+                        oneLevelId: numId,
+                        callback: function (selectOneObj) {
+                            numIdDom.value = selectOneObj.id;
+                            showNumDom.innerHTML = selectOneObj.value;
+                            showNumDom.dataset['id'] = selectOneObj.id;
+                            showNumDom.dataset['value'] = selectOneObj.value;
+                        }
+                    });
+        });
+        /*==住宿预定==*/
+        var showHotelDom = document.querySelector('#showHotel');
+        var hotelIdDom = document.querySelector('#hotelId');
+        showHotelDom.addEventListener('click', function () {
+            var hotelId = showHotelDom.dataset['id'];
+            var hotelName = showHotelDom.dataset['value'];
+            var hotelSelect = new IosSelect(1,
+                    [
+                        [
+                            {'id': '01', 'value': '是'},
+                            {'id': '02', 'value': '否'}
+                        ]
+                    ],
+                    {
+                        container: '.page',
+                        title: '请选择您是否需要住宿预订',
+                        itemHeight: 50,
+                        itemShowCount: 3,
+                        oneLevelId: hotelId,
+                        callback: function (selectOneObj) {
+                            hotelIdDom.value = selectOneObj.id;
+                            showHotelDom.innerHTML = selectOneObj.value;
+                            showHotelDom.dataset['id'] = selectOneObj.id;
+                            showHotelDom.dataset['value'] = selectOneObj.value;
+                                if(selectOneObj.value =="是"){
+                                    $(".hotelTrue").removeClass("notShow");
+                                }else{
+                                    $(".hotelTrue").addClass("notShow");
+                                }
+                        }
+                    });
+        });
+        /*==省选择==*/
+        var showProvinceDom = document.querySelector('#showProvince');
+        var provinceIdDom = document.querySelector('#provinceId');
+        showProvinceDom.addEventListener('click', function () {
+            var provinceId = showProvinceDom.dataset['id'];
+            var provinceName = showProvinceDom.dataset['value'];
+            var provinceSelect = new IosSelect(1,
+                    [
+                        [
+                            {'id': '01', 'value': '陕西省'},
+                            {'id': '02', 'value': '陕西省'},
+                            {'id': '03', 'value': '陕西省'},
+                            {'id': '04', 'value': '陕西省'},
+                            {'id': '05', 'value': '陕西省'},
+                        ]
+                    ],
+                    {
+                        container: '.page',
+                        title: '请选择您的户籍所在省',
+                        itemHeight: 50,
+                        itemShowCount: 3,
+                        oneLevelId: provinceId,
+                        callback: function (selectOneObj) {
+                            provinceIdDom.value = selectOneObj.id;
+                            showProvinceDom.innerHTML = selectOneObj.value;
+                            showProvinceDom.dataset['id'] = selectOneObj.id;
+                            showProvinceDom.dataset['value'] = selectOneObj.value;
+                        }
+                    });
+        });
+        /*==市选择==*/
+        var showCityDom = document.querySelector('#showCity');
+        var cityIdDom = document.querySelector('#cityId');
+        showCityDom.addEventListener('click', function () {
+            var cityId = showCityDom.dataset['id'];
+            var cityName = showCityDom.dataset['value'];
+            var citySelect = new IosSelect(1,
+                    [
+                        [
+                            {'id': '01', 'value': '西安市'},
+                            {'id': '02', 'value': '西安市'},
+                            {'id': '03', 'value': '西安市'},
+                            {'id': '04', 'value': '西安市'},
+                            {'id': '05', 'value': '西安市'},
+                            {'id': '06', 'value': '西安市'},
+                            {'id': '07', 'value': '西安市'},
+                            {'id': '08', 'value': '西安市'},
+                        ]
+                    ],
+                    {
+                        container: '.page',
+                        title: '请选择您的户籍所在市',
+                        itemHeight: 50,
+                        itemShowCount: 3,
+                        oneLevelId: cityId,
+                        callback: function (selectOneObj) {
+                            cityIdDom.value = selectOneObj.id;
+                            showCityDom.innerHTML = selectOneObj.value;
+                            showCityDom.dataset['id'] = selectOneObj.id;
+                            showCityDom.dataset['value'] = selectOneObj.value;
+                        }
+                    });
+        });
+        /*==备车选择==*/
+        var showCarDom = document.querySelector('#showCar');
+        var carIdDom = document.querySelector('#carId');
+        showCarDom.addEventListener('click', function () {
+            var carId = showCarDom.dataset['id'];
+            var carName = showCarDom.dataset['value'];
+            var carSelect = new IosSelect(1,
+                    [
+                        [
+                            {'id': '01', 'value': '是'},
+                            {'id': '02', 'value': '否'},
+                        ]
+                    ],
+                    {
+                        container: '.page',
+                        title: '请选择您的备车情况',
+                        itemHeight: 50,
+                        itemShowCount: 3,
+                        oneLevelId: carId,
+                        callback: function (selectOneObj) {
+                            carIdDom.value = selectOneObj.id;
+                            showCarDom.innerHTML = selectOneObj.value;
+                            showCarDom.dataset['id'] = selectOneObj.id;
+                            showCarDom.dataset['value'] = selectOneObj.value;
+                        }
+                    });
+        });
+        /*==健康状况选择==*/
+        var showHealthyDom = document.querySelector('#showHealthy');
+        var healthyIdDom = document.querySelector('#healthyId');
+        showHealthyDom.addEventListener('click', function () {
+            var healthyId = showHealthyDom.dataset['id'];
+            var healthyName = showHealthyDom.dataset['value'];
+            var healthySelect = new IosSelect(1,
+                    [
+                        [
+                            {'id': '01', 'value': '健康'},
+                            {'id': '02', 'value': '疾病'}
+                        ]
+                    ],
+                    {
+                        container: '.page',
+                        title: '请选择您的备车情况',
+                        itemHeight: 50,
+                        itemShowCount: 3,
+                        oneLevelId: healthyId,
+                        callback: function (selectOneObj) {
+                            healthyIdDom.value = selectOneObj.id;
+                            showHealthyDom.innerHTML = selectOneObj.value;
+                            showHealthyDom.dataset['id'] = selectOneObj.id;
+                            showHealthyDom.dataset['value'] = selectOneObj.value;
+                        }
+                    });
+        });
+
+        /*==星座==*/
+        var showStarDom = document.querySelector('#showStar');
+        var starIdDom = document.querySelector('#starId');
+        showStarDom.addEventListener('click', function () {
+            var starId = showStarDom.dataset['id'];
+            var starName = showStarDom.dataset['value'];
+            var starSelect = new IosSelect(1,
+                    [
+                        [
+                            {'id': '01', 'value': '狮子座'},
+                            {'id': '02', 'value': '射手座'},
+                            {'id': '03', 'value': '白羊座'},
+                            {'id': '04', 'value': '双子座'},
+                            {'id': '05', 'value': '双鱼座'},
+                            {'id': '06', 'value': '金牛座'},
+                            {'id': '07', 'value': '天秤座'},
+                            {'id': '08', 'value': '摩羯座'},
+                            {'id': '09', 'value': '处女座'},
+                            {'id': '10', 'value': '巨蟹座'},
+                            {'id': '11', 'value': '天蝎座'},
+                            {'id': '12', 'value': '水瓶座'}
+                        ]
+                    ],
+                    {
+                        container: '.page',
+                        title: '请选择您的备车情况',
+                        itemHeight: 50,
+                        itemShowCount: 3,
+                        oneLevelId: starId,
+                        callback: function (selectOneObj) {
+                            starIdDom.value = selectOneObj.id;
+                            showStarDom.innerHTML = selectOneObj.value;
+                            showStarDom.dataset['id'] = selectOneObj.id;
+                            showStarDom.dataset['value'] = selectOneObj.value;
+                        }
+                    });
+        });
+
+        /*==生日==*/
+        var newDate = new Date();
+        var newYear = newDate.getFullYear();
+        var newMonth = newDate.getMonth()+1;
+        var newDay = newDate.getDate();
+        var today = newYear+"-"+newMonth+"-"+newDay;
+        var birthday = new lCalendar();
+        $("#birthday").attr("data-lcalendar",'1900-01-01, '+today);
+        birthday.init({
+            'trigger': '#birthday',
+            'type': 'date'
+        });
+        /*==开始日期==*/
+        var startDate = new lCalendar();
+        $("#startDate").attr("data-lcalendar",today+', 2018-01-01');
+        birthday.init({
+            'trigger': '#startDate',
+            'type': 'date'
+        });
+        /*==结束日期==*/
+        var endDate = new lCalendar();
+        $("#endDate").attr("data-lcalendar",today+', 2018-01-01');
+        birthday.init({
+            'trigger': '#endDate',
+            'type': 'date'
         });
     })(jQuery);
 </script>

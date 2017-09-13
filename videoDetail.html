@@ -105,12 +105,12 @@
     </div>
 </div>
 <script src="js/jquery.min.js"></script>
-<script src="js/fastclick.min.js"></script>
+<!--<script src="js/fastclick.min.js"></script>-->
 <script src="js/video.js"></script>
 <script>
     ;(function ($){
-        FastClick.attach(document.body);
-        var click = "click";
+//        FastClick.attach(document.body);
+        var click = "ontouchstart" in document ? "touchend" : "click";
         /*==视频==*/
         var player = videojs("video_1",{
             autoplay :  false,
