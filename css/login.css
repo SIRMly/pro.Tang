@@ -9,11 +9,11 @@
 img{display: block;}
 .error{font-size: 0.45rem; color: #E60012; position: absolute; top: -7vw; left: 0; width: 100%; text-align: center;}
 .page.login{background: url("../img/login-bg.png") no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%;}
-.login-title{width: 100%; height: 48vw; border: 1px solid transparent;}
-.login-title img{width: 32vw; height: 32vw; margin: 11% auto 0;}
+.login-title{width: 100%; height: 46vw; border: 1px solid transparent;}
+.login-title img{width: 32vw; height: 32vw; margin: 10% auto 0;}
 .form-content{width: 62.2%; margin: 2rem auto 0; padding-bottom: 1rem;}
 .input-item{height: 9vw; line-height: 9vw; position: relative; border: 1px solid #5f313e; border-radius: 1.7rem; padding: 0 0.8rem;}
-.input-item+.input-item{margin-top: 1.3em;}
+.input-item+.input-item{margin-top: 1.2em;}
 .input-controller{display: block; height: 100%;  display: -webkit-box; display: -ms-flexbox; display: -webkit-flex; display: flex;-webkit-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; }
 .icon-span{width: 1rem; height: 1.4rem; background: url("../img/icon.png") no-repeat left center; -webkit-background-size: 200% auto; background-size: 200% auto;}
 .mail-icon{ background-position: center 27.4%;}
