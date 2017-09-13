@@ -34,6 +34,9 @@
             </div>
         </div>
     </div>
+    <div class="share-crash clearfix">
+        <img src="img/share-pic.png" alt=""/>
+    </div>
 </div>
 <script src="js/jquery.min.js"></script>
 <script src="js/fastclick.min.js"></script>
@@ -56,6 +59,13 @@
         if(titleH >= 2*HtmlF){
             title.addClass("text-left");
         }
+        /*==分享==*/
+        $(".display-share").on("click", function (){
+            $(".share-crash").stop().fadeIn(200);
+        });
+        $(".share-crash").on("click", function (){
+            $(this).stop().fadeOut(200);
+        });
     })(jQuery);
 </script>
 </body>
