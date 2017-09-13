@@ -173,7 +173,7 @@ p.voice-small{font-size: 0.55rem; color: #5f313e; text-align: right; margin-top:
 .code-notice{font-size: 0.6rem; color: #5f313e; text-align: center;}
 .page-code .form-content{padding: 0 0.5rem;}
 .page-code .input-span{background-color: transparent; border-right: none;}
-.page-code .tickets-links{margin-top: 2.5rem;}
+.page-code .tickets-links{margin-top: 0;}
 .mt0{margin-top: -0.125rem;}
 .input-check{width: 1.4rem; align-self: center; -webkit-align-self: center; flex-item-align: center; }
 .input-check span{ display: block; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; width: 0.5rem; height: 0.5rem; border: 0.17rem solid #5f313e; background-color: transparent; border-radius: 50%; margin: 0 auto;}
