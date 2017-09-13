@@ -36,8 +36,8 @@
 .article-content p{font-size: 0.75rem; color: #000; line-height: 1.4rem; margin-bottom: 0.45rem; text-indent: 1.5rem; text-align: justify;}
 .point-num{color: #46202a; font-size: 0.8rem; margin-top: 1.2rem;}
 .read-num{background: url("../img/eye.png") no-repeat center left; -webkit-background-size: auto 65%;  background-size: auto 65%; padding-left: 1.1rem; margin-right: 0.5rem;}
-.point-hand{padding-left: 1rem; background: url("../img/point.png") no-repeat center left; -webkit-background-size: auto 290%; background-size: auto 290%; background-position: 0 -6%;}
-.point-hand.active{background-position: 0 106%;}
+.point-hand{padding-left: 1rem; background: url("../img/point.png") no-repeat center left; -webkit-background-size: auto 0.9rem; background-size: auto 0.9rem;}
+.point-hand.active{background-image: url("../img/point-active.png");}
 /*==评论==*/
 .comment-title{width: 100%; height: 5.067vw;margin-bottom: 0.5rem;}
 .comment-title img{height: 100%; width: auto; margin: 0 auto;}
@@ -47,8 +47,8 @@
 .comment-header{position: absolute; width: 6.8vw;height: 6.8vw; border-radius: 50%; left: 0.75rem; top: 0.25rem;}
 .comment-item .name{color: #036e94; font-size: 0.7rem;}
 .comment-name{height: 1.55rem; line-height: 1.55rem;}
-.comment-point{color: #46202a; font-size: 0.7rem;text-align: left; padding-right: 1.2rem; background: url("../img/point.png") no-repeat center right; -webkit-background-size: 26% auto; background-size: 26% auto; background-position: 96% -13%;}
-.comment-point.active{ background-position: 96% 128%;}
+.comment-point{color: #46202a; font-size: 0.7rem;text-align: left; padding-right: 1rem; background: url("../img/point.png") no-repeat center right; -webkit-background-size: auto 0.9rem; background-size: auto 0.9rem; background-position-y: 27%;}
+.comment-point.active{ background-image: url("../img/point-active.png");}
 .comment-main{color: #333333; font-size: 0.75rem; line-height: 1.1rem;}
 .comment-time{color: #333; font-size: 0.55rem; margin-top: 0.05rem;}
 .comment-second{color: #606060; font-size: 0.6rem; margin-top: 0.7rem;}
@@ -117,7 +117,7 @@ video::-webkit-media-controls { display:none !important; }
 .display-list{display: block; margin-bottom: 0.3rem;}
 /*==展览信息详情==*/
 .display-detail .article-title{margin-bottom: 0.5rem; text-align: center;}
-.article-title.text-left{text-align: left;}
+.article-title.text-left,.voice-detail-title.text-left{text-align: left;}
 .display-detail .article-wrapper{border-bottom: none; margin-bottom: 1.5rem;}
 .display-detail .point-num{margin-top: 2.4rem;}
 .display-detail .read-num{margin-right: 1.2rem;}
@@ -222,7 +222,7 @@ a.display-more-btn{position: absolute; width: 33.3vw; height: 13.3vw; right: 8vw
 .to-voice{left: 67%;}
 .index-bottom{padding:2.7rem 1rem 2.7rem 1rem;}
 .index-bottom img{width: 14.125rem; max-width: 75.33vw;}
-.toTop{width: 1.2rem; height: 1.2rem; background: url("../img/icon.png") no-repeat;-webkit-background-size:145% auto; background-size:145% auto; background-position: center 99.9%;}
+.toTop{width: 1.2rem; height: 1.2rem; background: url("../img/icon.png") no-repeat;-webkit-background-size:1.6rem auto; background-size:1.6rem auto; background-position: center 90.9%;}
 /*==搜索==*/
 .search-input{margin-left: 1.625rem; height: 100%; border-radius: 0.2rem; background: #f1e8d6 url("../img/icon.png") no-repeat; -webkit-background-size:2rem auto; background-size:2rem auto; background-position: right 81.6%;}
 .search-input input{display: block; height: 100%; width: 70%; padding: 0 0.5rem; font-size: 0.6rem; color: #b4afa5;}
