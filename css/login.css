@@ -9,7 +9,7 @@
 img{display: block;}
 .error{font-size: 0.45rem; color: #E60012; position: absolute; top: -7vw; left: 0; width: 100%; text-align: center;}
 .page.login{background: url("../img/login-bg.png") no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%;}
-.login-title{width: 100%; height: 46vw; border: 1px solid transparent;}
+.login-title{width: 100%; height: 44vw; border: 1px solid transparent;}
 .login-title img{width: 32vw; height: 32vw; margin: 10% auto 0;}
 .form-content{width: 62.2%; margin: 2rem auto 0; padding-bottom: 1rem;}
 .input-item{height: 9vw; line-height: 9vw; position: relative; border: 1px solid #5f313e; border-radius: 1.7rem; padding: 0 0.8rem;}
@@ -39,7 +39,7 @@ img{display: block;}
 .checkbox-input:checked+.checkbox-show{ background: no-repeat center; background-color: #915041; background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20x%3D'0px'%20y%3D'0px'%20viewBox%3D'0%200%2012%209'%20xml%3Aspace%3D'preserve'%3E%3Cpolygon%20fill%3D'%23ffffff'%20points%3D'12%2C0.7%2011.3%2C0%203.9%2C7.4%200.7%2C4.2%200%2C4.9%203.9%2C8.8%203.9%2C8.8%203.9%2C8.8%20'%2F%3E%3C%2Fsvg%3E"); color: #915041; -webkit-background-size: contain; background-size: contain; }
 .checkbox-word{margin-left: 0.2rem; color: #464646;}
 .checkbox-word:before{content: "*"; font-size: 0.35rem; color: #915041; }
-.register-btn{display: block; width: 15.7vw;  height: 7.1vw; background: url("../img/register-btn.png") no-repeat center center; -webkit-background-size: contain; background-size: contain; margin: 1.95rem auto 0;}
+.register-btn{display: block; width: 15.7vw;  height: 7.1vw; background: url("../img/register-btn.png") no-repeat center center; -webkit-background-size: contain; background-size: contain; margin: 1.5rem auto 0;}
 #register-done{position: absolute; left: 0; top: 0; z-index: 99; width: 100%; height: 100%;background: #f5e4cb url("../img/re-bg.png") repeat; padding-top: 35vh; display: none;}
 #register-done.succ .register-succ-inner{display: block;}
 #register-done.error .register-succ-inner{display: none;}
