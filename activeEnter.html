@@ -199,11 +199,18 @@
     </div>
 </div>
 <div class="page success-notice">
-    <div class="notice-content">
+    <div class="notice-content notice-succ">
         <img src="img/succ-show.png" alt=""/>
         <p class="notice-btns po-re">
             <a href="javascript:;" class="notice-timeout">报名状态查看</a>
-            <a href="javascript:;" class="notice-link">点击返回首页</a>
+            <a href="index.html" class="notice-link">点击返回首页</a>
+        </p>
+    </div>
+    <div class="notice-content notice-error">
+        <img src="img/error-show.png" alt=""/>
+        <p class="notice-btns po-re">
+            <a href="javascript:;" class="notice-timeout">点击再次提交</a>
+            <a href="index.html" class="notice-link">点击返回首页</a>
         </p>
     </div>
 </div>
@@ -222,10 +229,13 @@
                 $(this).addClass("active");
             }
         });
-        /*==提交成功==*/
+        /*==提交==*/
         $(".submit-btn").on("click", function (){
-           $(".active-enter").hide();
-           $(".success-notice").show();
+            $(".active-enter").hide();
+            /*==提交成功==*/
+            $(".success-notice").stop().addClass("succ").show();
+            /*==提交失败==*/
+//            $(".success-notice").stop().addClass("error").show();
         });
         /*==家庭情况==*/
         var showFamilyDom = document.querySelector('#showFamily');

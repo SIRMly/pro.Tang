@@ -130,11 +130,35 @@
         </div>
     </div>
 </div>
+<div class="page success-notice">
+    <div class="notice-content notice-succ">
+        <img src="img/succ-show.png" alt=""/>
+        <p class="notice-btns po-re">
+            <a href="mySurvey.html" class="notice-timeout">我的问卷查看</a>
+            <a href="index.html" class="notice-link">点击返回首页</a>
+        </p>
+    </div>
+    <div class="notice-content notice-error">
+        <img src="img/error-show.png" alt=""/>
+        <p class="notice-btns po-re">
+            <a href="javascript:;" class="notice-timeout">点击再次提交</a>
+            <a href="survey.html" class="notice-link">点击返回问卷</a>
+        </p>
+    </div>
+</div>
 <script src="js/jquery.min.js"></script>
 <script src="js/fastclick.min.js"></script>
 <script>
     ;(function (jQuery) {
         FastClick.attach(document.body);
+        /*==提交==*/
+        $(".survey-submit").on("click", function (){
+            $(".active-enter").hide();
+            /*==提交成功==*/
+            $(".success-notice").stop().addClass("succ").show();
+            /*==提交失败==*/
+//            $(".success-notice").stop().addClass("error").show();
+        });
         /*==底部input问题==*/
         var interval;
         $("input").focus(function () {

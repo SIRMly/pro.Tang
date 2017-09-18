@@ -71,7 +71,7 @@
                         <input type="tel" class="input-controls" id="date" readonly>
                     </label>
                 </div>
-                <a href="ticketSucc.html" class="submit-btn"></a>
+                <a href="javascript:;" class="submit-btn"></a>
             </div>
             <div class="tickets-links">
                 <div class="tickets-links-title">点击进入票务微店</div>
@@ -93,6 +93,15 @@
         </div>
     </div>
 </div>
+<div class="page success-notice">
+    <div class="notice-content notice-error">
+        <img src="img/error-show.png" alt=""/>
+        <p class="notice-btns po-re">
+            <a href="javascript:;" class="notice-timeout">再次提交</a>
+            <a href="index.html" class="notice-link">返回首页</a>
+        </p>
+    </div>
+</div>
 <script src="js/jquery.min.js"></script>
 <script src="js/fastclick.min.js"></script>
 <script src="js/iscroll.js"></script>
@@ -101,6 +110,14 @@
 <script>
     ;(function ($) {
         FastClick.attach(document.body);
+        /*==提交==*/
+        $(".submit-btn").on("click", function (){
+            /*==提交成功==*/
+            window.location.href = "ticketSucc.html";
+            /*==提交失败==*/
+//            $(".active-enter").hide();
+//            $(".success-notice").stop().addClass("error").show();
+        });
         /*==性别选择==*/
         var showSexDom = document.querySelector('#showSex');
         var sexIdDom = document.querySelector('#sexId');

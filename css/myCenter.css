@@ -63,3 +63,13 @@ a.signOut-btn{background-position: -0.1rem 97%; -webkit-background-size: 1.7rem 
 .survey-code{width: 15.7vw; height: 6.13vw; background-color: #5c303d;}
 .survey-code img{height: 100%;}
 .survey-submit{position: absolute; right: 1.85rem; bottom: 0.5rem; width: 14.3vw; height: 6.45vw; background: url("../img/submit-btn.png") no-repeat center center; -webkit-background-size: contain;background-size: contain;}
+.success-notice{position: fixed; left: 0; top: 0; padding-top: 30vh; display: none;}
+.success-notice.succ .notice-succ{display: block;}
+.success-notice.succ .notice-error{display: none;}
+.success-notice.error .notice-succ{display: none;}
+.success-notice.error .notice-error{display: block;}
+.notice-content img{width: 28.93vw; margin: 0 auto;}
+.notice-btns{height: 1rem; width: 100%; margin-top: 1rem;}
+.notice-btns a{font-size: 0.6rem; color: #5f313e; border-bottom: 1px solid #5f313e; position: absolute;}
+.notice-timeout{right: 50%; margin-right: 0.5rem;}
+.notice-link{left: 50%; margin-left: 0.5rem;}
