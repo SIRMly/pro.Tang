@@ -33,7 +33,7 @@
 .article-time .author{color: #5f313e;}
 .article-wrapper{margin: 0.5rem 0.5rem 2.5rem; padding: 0.5rem 0.5rem 1rem; border-bottom: 1px solid #6f4148;}
 .article-wrapper .title{height: 2.25rem; line-height: 1.9rem; color: #000000; font-size: 0.75rem; text-align: center;}
-.article-content p{font-size: 0.75rem; color: #000; line-height: 1.4rem; margin-bottom: 0.45rem; text-indent: 1.5rem; text-align: justify;}
+.article-content p{font-size: 0.75rem; color: #000; line-height: 1.4rem; margin-bottom: 0.45rem;}
 .point-num{color: #46202a; font-size: 0.8rem; margin-top: 1.2rem;}
 .read-num{background: url("../img/eye.png") no-repeat center left; -webkit-background-size: auto 65%;  background-size: auto 65%; padding-left: 1.1rem; margin-right: 0.5rem;}
 .point-hand{padding-left: 1rem; background: url("../img/point.png") no-repeat center left; -webkit-background-size: auto 0.9rem; background-size: auto 0.9rem;}
