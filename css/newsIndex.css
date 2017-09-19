@@ -152,7 +152,7 @@ p.voice-small{font-size: 0.55rem; color: #5f313e; text-align: right; margin-top:
 /*==活动报名==*/
 .enter-wrapper{padding: 0 0.5rem 2.2rem;}
 .enter-title{width: 100%; height: 7.33vw; background: url("../img/enter-title.png") no-repeat center center; -webkit-background-size: contain; background-size: contain;}
-.input-controller{border: 0.125rem solid #60313e; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; height: 1.4rem; line-height: 1.4rem; margin-top: 1.225rem; background-color: #2ac845; }
+.input-controller{border: 0.125rem solid #60313e; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; height: 1.4rem; line-height: 1.4rem; margin-top: 1.225rem; background-color: gray; }
 .input-span{font-size: 0.8rem; color: #000; background-color: #bea7a1; width: 3.8rem; text-align: center; border-right: 0.125rem solid #60313e; pointer-events: none;}
 .input-span.number2{word-spacing: 1.4rem;}
 .input-controls{flex: 1; width: 0; padding: 0 0.75rem; font-size: 0.8rem; color: #000;}
@@ -167,7 +167,7 @@ p.voice-small{font-size: 0.55rem; color: #5f313e; text-align: right; margin-top:
     display: -webkit-box; display: -ms-flexbox; display: -webkit-flex; display: flex;-webkit-box-align: stretch; -ms-flex-align: stretch; -webkit-align-items: stretch; align-items: stretch; -webkit-box-pack: justify; -ms-flex-pack: justify; -webkit-justify-content: space-between; justify-content: space-between;
 }
 .address .addre-item{width: 49.5%; padding: 0 0.65rem 0 0.75rem; position: relative; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; background-color: #010101;}
-.addre-item span{display: block; width: 100%; height: 100%; font-size: 0.8rem; color: #000;}
+.addre-item span{display: block; width: 100%; height: 100%; font-size: 0.8rem; color: #000; position: absolute; left: 0; top: 0; background-color: #fff;}
 .img-updown{width: 18.67vw; height: 18.67vw; position: relative; margin-top: 1.5rem; background: url("../img/pic-add.png") no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%;}
 .img-updown.img-updowned{border: 1px solid #61313e;}
 .img-updown+.img-updown{margin-left: 3vw;}
