@@ -239,8 +239,9 @@
 <script src="js/lCalendar.js"></script>
 <script>
     ;(function ($){
+        var click = "ontouchstart" in docuemnt ? "touchstart" : "click";
         /*==评论的点赞换图标==*/
-        $(".point-hand").on("click", function () {
+        $(".point-hand").on(click, function () {
             if ($(this).hasClass("active")) {
                 $(this).removeClass("active");
             } else {
@@ -257,7 +258,7 @@
                 imgNum++;
             }
         }
-        $("body").on("click",".img-updown", function (){
+        $("body").on(click,".img-updown", function (){
             var thisId = $(this).find(".img-btn").attr("id");
             var index = thisId.charAt(thisId.length-1);
             if($("#img-btn"+index).val() == ""){
@@ -314,7 +315,7 @@
             }
         }
         /*==提交==*/
-        $(".submit-btn").on("click", function (){
+        $(".submit-btn").on(click, function (){
             $(".active-enter").hide();
             /*==提交成功==*/
             $(".success-notice").stop().addClass("succ").show();
