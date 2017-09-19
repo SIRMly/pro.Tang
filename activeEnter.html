@@ -497,7 +497,7 @@
         /*==省选择==*/
         var showProvinceDom = document.querySelector('#showProvince');
         var provinceIdDom = document.querySelector('#provinceId');
-        showProvinceDom.addEventListener('click', function () {
+        showProvinceDom.addEventListener(click, function () {
             var provinceId = showProvinceDom.dataset['id'];
             var provinceName = showProvinceDom.dataset['value'];
             var provinceSelect = new IosSelect(1,
