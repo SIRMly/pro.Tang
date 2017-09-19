@@ -18,6 +18,7 @@ a, button, input, select, textarea {-webkit-tap-highlight-color: rgba(255, 255, 
 input::-webkit-inner-spin-button, input::-webkit-outer-spin-button {-webkit-appearance: none !important;  margin: 0  ;}
 button, input[type=submit], input[type=reset], input[type=button] {-webkit-appearance: none;}
 input[type=number]{ -moz-appearance: textfield;  }
+input:-webkit-autofill,textarea:-webkit-autofill,select:-webkit-autofill{background-color:transparent; background-image: none; color:#5f313e;}
 .clearfix:after, .clearfix:before{content: "";  display: block;  height: 0;  clear: both;  visibility: hidden;}
 .pull-left{float: left;}
 .pull-right{float: right;}
