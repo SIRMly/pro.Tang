@@ -156,7 +156,7 @@
                         <span class="input-span number2">户 籍</span>
                         <div class="input-controls address clearfix">
                             <div class="addre-item selectedInput">
-                                <span id="showProvince" style="background-color: #007aff;"></span>
+                                <span id="showProvince"></span>
                                 <input type="hidden" id="provinceId" value="">
                             </div>
                             <div class="addre-item selectedInput">
@@ -239,7 +239,7 @@
 <script src="js/lCalendar.js"></script>
 <script>
     ;(function ($){
-        var click = "ontouchstart" in document ? "touchstart" : "click";
+        var click = "ontouchstart" in document ? "touchend" : "click";
         /*==评论的点赞换图标==*/
         $(".point-hand").on(click, function () {
             if ($(this).hasClass("active")) {
@@ -258,7 +258,7 @@
                 imgNum++;
             }
         }
-        $("body").on(click,".img-updown", function (){
+        $("body").on('click',".img-updown", function (){
             var thisId = $(this).find(".img-btn").attr("id");
             var index = thisId.charAt(thisId.length-1);
             if($("#img-btn"+index).val() == ""){
@@ -497,8 +497,7 @@
         /*==省选择==*/
         var showProvinceDom = document.querySelector('#showProvince');
         var provinceIdDom = document.querySelector('#provinceId');
-        showProvinceDom.addEventListener(click, function () {
-            alert(213)
+        showProvinceDom.addEventListener('click', function () {
             var provinceId = showProvinceDom.dataset['id'];
             var provinceName = showProvinceDom.dataset['value'];
             var provinceSelect = new IosSelect(1,
