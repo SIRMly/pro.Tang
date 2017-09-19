@@ -156,7 +156,7 @@
                         <span class="input-span number2">户 籍</span>
                         <div class="input-controls address">
                             <div class="addre-item selectedInput">
-                                <span id="showProvince"></span>
+                                <span id="showProvince" style="background-color: #007aff;"></span>
                                 <input type="hidden" id="provinceId" value="">
                             </div>
                             <div class="addre-item selectedInput">
@@ -498,6 +498,7 @@
         var showProvinceDom = document.querySelector('#showProvince');
         var provinceIdDom = document.querySelector('#provinceId');
         showProvinceDom.addEventListener(click, function () {
+            alert(213)
             var provinceId = showProvinceDom.dataset['id'];
             var provinceName = showProvinceDom.dataset['value'];
             var provinceSelect = new IosSelect(1,
